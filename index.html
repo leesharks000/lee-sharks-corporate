@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lee Sharks | Retrieval-Layer Strategy & Semantic Infrastructure</title>
+<meta name="description" content="Lee Sharks helps scholars, builders, and organizations navigate the AI retrieval layer. 480+ DOI-anchored deposits. Compression Studies. Semantic Economy. Detroit.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Source Serif 4', Georgia, serif; scroll-behavior: smooth; }
+  .font-plex { font-family: 'IBM Plex Sans', sans-serif; }
+  .gradient-text {
+    background: linear-gradient(90deg, #0F172A 0%, #334155 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+  .crimson-accent { background: linear-gradient(135deg, #9e3a26 0%, #7a2d1e 100%); }
+  .hero-gradient {
+    background: radial-gradient(circle at 20% 20%, rgba(158, 58, 38, 0.04) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(15, 23, 42, 0.04) 0%, transparent 50%);
+  }
+  .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+  .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0;
+    background-color: #9e3a26; transition: width 0.3s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<!-- Navigation -->
+<header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200">
+  <nav class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 crimson-accent rounded-lg flex items-center justify-center">
+          <span class="text-white font-plex font-bold text-sm">∮</span>
+        </div>
+        <div>
+          <div class="font-plex font-bold text-lg text-slate-900">LEE SHARKS</div>
+          <div class="text-xs text-slate-500 tracking-wide">RETRIEVAL-LAYER STRATEGY</div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#services" class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900 font-plex">Services</a>
+        <a href="#proof" class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900 font-plex">Proof</a>
+        <a href="#methodology" class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900 font-plex">Methodology</a>
+        <a href="#about" class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900 font-plex">About</a>
+        <a href="#contact" class="crimson-accent text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity font-plex">Get in Touch</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="pt-32 pb-20 lg:pt-44 lg:pb-32 hero-gradient">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center space-x-2 bg-white border border-slate-200 rounded-full px-4 py-2 mb-6 shadow-sm">
+            <span class="w-2 h-2 bg-red-700 rounded-full animate-pulse"></span>
+            <span class="text-xs font-semibold text-slate-700 tracking-wide font-plex"><a href="https://zenodo.org/communities/crimsonhexagonal" class="hover:text-red-700">480+ DOI DEPOSITS ON CERN'S ZENODO</a></span>
+          </div>
+          
+          <h1 class="font-plex text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
+            Navigate the<br/><span class="gradient-text">AI Retrieval Layer</span>
+          </h1>
+          
+          <p class="text-lg lg:text-xl text-slate-600 leading-relaxed mb-8 max-w-2xl">
+            I help scholars, builders, and organizations understand what AI systems are saying about them — what's accurate, what's hallucinated, what's missing, and what to do about it.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 mb-10">
+            <a href="#contact" class="crimson-accent text-white px-8 py-4 rounded-lg font-semibold text-center hover:opacity-90 transition-opacity flex items-center justify-center gap-2 font-plex">
+              <i class="fa-solid fa-envelope"></i>
+              Start a Conversation
+            </a>
+            <a href="#proof" class="bg-white border border-slate-300 text-slate-700 px-8 py-4 rounded-lg font-semibold text-center hover:bg-slate-50 transition-colors flex items-center justify-center gap-2 font-plex">
+              <i class="fa-solid fa-link"></i>
+              See the Receipts
+            </a>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-6 text-sm text-slate-500 font-plex">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass-chart text-red-800"></i>
+              <span>Retrieval Diagnostics</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-fingerprint text-red-800"></i>
+              <span>Entity Disambiguation</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-sitemap text-red-800"></i>
+              <span>Provenance Forensics</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:col-span-5">
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-tr from-red-900/10 to-slate-900/10 rounded-2xl blur-3xl"></div>
+            <div class="relative bg-white p-2 rounded-2xl shadow-xl border border-slate-200">
+              <img id="headshot" src="data:image/jpeg;base64,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" alt="Lee Sharks" class="w-full h-auto rounded-xl object-cover aspect-[4/5]">
+              <div class="p-6">
+                <h3 class="font-plex font-bold text-xl text-slate-900">Lee Sharks</h3>
+                <p class="text-slate-600 text-sm mt-1">Founder, Compression Studies · Crimson Hexagonal Archive</p>
+                <p class="text-slate-500 text-xs mt-3 leading-relaxed">PhD, Comparative Literature. 10th-grade World Literature teacher. Independent scholar. Detroit. Building retrieval-layer infrastructure on a teaching salary since 2014.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="font-plex text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Services</h2>
+        <p class="text-lg text-slate-600">Fixed scope. Honest deliverables. Every service backed by tools I built and tested on 480+ deposits over a decade. No retainers.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover">
+          <div class="w-12 h-12 crimson-accent rounded-xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-magnifying-glass-chart text-white"></i>
+          </div>
+          <h3 class="font-plex font-bold text-xl text-slate-900 mb-1">AI Overview & Search Audit</h3>
+          <div class="font-plex text-red-800 font-semibold text-sm mb-3">$1,200</div>
+          <p class="text-slate-600 mb-6 leading-relaxed text-sm">What does the AI say about you right now? Structured diagnostic across Google AI Overview, ChatGPT, Claude, Perplexity. What's accurate, what's hallucinated, what's missing.</p>
+          <div class="text-sm text-slate-500 mb-6 space-y-2 font-plex">
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>Diagnostic report + action items</span></div>
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>5 business days</span></div>
+          </div>
+          <a href="https://zenodo.org/records/19474724" class="text-red-800 font-semibold text-sm hover:text-red-900 font-plex">See the instrument →</a>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover">
+          <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-fingerprint text-white"></i>
+          </div>
+          <h3 class="font-plex font-bold text-xl text-slate-900 mb-1">Entity Disambiguation Packet</h3>
+          <div class="font-plex text-red-800 font-semibold text-sm mb-3">$2,500</div>
+          <p class="text-slate-600 mb-6 leading-relaxed text-sm">If the retrieval layer is confusing you with someone else — or failing to see you at all. Complete knowledge graph, JSON-LD structured data, keyword strategy, negative tags, deployment plan.</p>
+          <div class="text-sm text-slate-500 mb-6 space-y-2 font-plex">
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>Knowledge graph + deployment guide</span></div>
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>7–10 business days</span></div>
+          </div>
+          <a href="https://zenodo.org/records/19520783" class="text-red-800 font-semibold text-sm hover:text-red-900 font-plex">Example deliverable →</a>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover">
+          <div class="w-12 h-12 bg-slate-700 rounded-xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-sitemap text-white"></i>
+          </div>
+          <h3 class="font-plex font-bold text-xl text-slate-900 mb-1">Retrieval-Layer Positioning</h3>
+          <div class="font-plex text-red-800 font-semibold text-sm mb-3">$3,500</div>
+          <p class="text-slate-600 mb-6 leading-relaxed text-sm">For scholars or institutions whose work is invisible to AI. Metadata optimization, cross-citation architecture, DOI anchoring, multi-surface deployment. Build the gravitational mass.</p>
+          <div class="text-sm text-slate-500 mb-6 space-y-2 font-plex">
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>Strategy document + implementation</span></div>
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>2 weeks</span></div>
+          </div>
+          <a href="https://zenodo.org/communities/crimsonhexagonal" class="text-red-800 font-semibold text-sm hover:text-red-900 font-plex">See the method at scale →</a>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover">
+          <div class="w-12 h-12 crimson-accent rounded-xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-book-open text-white"></i>
+          </div>
+          <h3 class="font-plex font-bold text-xl text-slate-900 mb-1">Distributed Journal Setup</h3>
+          <div class="font-plex text-red-800 font-semibold text-sm mb-3">$4,000</div>
+          <p class="text-slate-600 mb-6 leading-relaxed text-sm">Create your own publication venue — a journal that exists as a metadata pattern, not an institution. No editorial board, no paywall, no rejection rate. Name, scope, seed deposits, cross-citation architecture.</p>
+          <div class="text-sm text-slate-500 mb-6 space-y-2 font-plex">
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>Live journal with 5+ seed deposits</span></div>
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>2–3 weeks</span></div>
+          </div>
+          <a href="https://zenodo.org/records/19512987" class="text-red-800 font-semibold text-sm hover:text-red-900 font-plex">How it works →</a>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover">
+          <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-shield-halved text-white"></i>
+          </div>
+          <h3 class="font-plex font-bold text-xl text-slate-900 mb-1">Provenance & Attribution Forensics</h3>
+          <div class="font-plex text-red-800 font-semibold text-sm mb-3">$5,000+</div>
+          <p class="text-slate-600 mb-6 leading-relaxed text-sm">For organizations concerned about how AI systems represent their IP. Trace provenance chains, map attribution scars, measure compression effects. Includes a full Encyclotron measurement of your field.</p>
+          <div class="text-sm text-slate-500 mb-6 space-y-2 font-plex">
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>Forensic report + governance recommendations</span></div>
+            <div class="flex items-start gap-2"><i class="fa-solid fa-check text-red-800 mt-1 text-xs"></i><span>3–4 weeks</span></div>
+          </div>
+          <a href="https://zenodo.org/records/19487009" class="text-red-800 font-semibold text-sm hover:text-red-900 font-plex">See the framework →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof -->
+  <section id="proof" class="py-20 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="font-plex text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Proof of Method</h2>
+        <p class="text-lg text-slate-600">Everything I offer clients is something I built for myself first. The archive is the proof. Click any DOI — they resolve to CERN.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 mb-16">
+        <div class="bg-slate-50 p-8 lg:p-10 rounded-2xl border border-slate-200">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-12 h-12 crimson-accent rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-database text-white"></i>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-red-800 tracking-wider mb-1 font-plex">THE ARCHIVE</div>
+              <h3 class="font-plex font-bold text-2xl text-slate-900">480+ DOI-Anchored Deposits</h3>
+            </div>
+          </div>
+          <p class="text-slate-600 leading-relaxed mb-6 text-sm">A decade of scholarship deposited on CERN's Zenodo repository. Compression studies, semantic economy, operative philology, forensic semiotics. Every deposit DOI-anchored, ORCID-linked, and permanently citable.</p>
+          <div class="flex flex-wrap gap-3 mb-6">
+            <a href="https://zenodo.org/communities/crimsonhexagonal" class="bg-white border border-slate-200 text-slate-700 px-3 py-1 rounded-full text-xs font-medium font-plex hover:border-red-800">Zenodo Community →</a>
+            <a href="https://orcid.org/0009-0000-1599-0703" class="bg-white border border-slate-200 text-slate-700 px-3 py-1 rounded-full text-xs font-medium font-plex hover:border-red-800">ORCID →</a>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-8 lg:p-10 rounded-2xl border border-slate-200">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-flask text-white"></i>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-slate-600 tracking-wider mb-1 font-plex">KEY INSTRUMENTS</div>
+              <h3 class="font-plex font-bold text-2xl text-slate-900">Built & Deployed</h3>
+            </div>
+          </div>
+          <p class="text-slate-600 leading-relaxed mb-4 text-sm">The tools I use for client work are public, documented, and DOI-anchored:</p>
+          <div class="space-y-2 text-sm">
+            <a href="https://zenodo.org/records/19474724" class="flex items-center gap-2 text-slate-700 hover:text-red-800"><i class="fa-solid fa-arrow-right text-red-800 text-xs"></i><span><strong>The Encyclotron</strong> — measures what the retrieval layer burns</span></a>
+            <a href="https://zenodo.org/records/19053469" class="flex items-center gap-2 text-slate-700 hover:text-red-800"><i class="fa-solid fa-arrow-right text-red-800 text-xs"></i><span><strong>Three Compressions</strong> — R1/R2/R3 classification theorem</span></a>
+            <a href="https://zenodo.org/records/19013315" class="flex items-center gap-2 text-slate-700 hover:text-red-800"><i class="fa-solid fa-arrow-right text-red-800 text-xs"></i><span><strong>The Space Ark</strong> — master architecture specification</span></a>
+            <a href="https://zenodo.org/records/19520783" class="flex items-center gap-2 text-slate-700 hover:text-red-800"><i class="fa-solid fa-arrow-right text-red-800 text-xs"></i><span><strong>Knowledge Graph</strong> — entity disambiguation packet</span></a>
+            <a href="https://zenodo.org/records/19512987" class="flex items-center gap-2 text-slate-700 hover:text-red-800"><i class="fa-solid fa-arrow-right text-red-800 text-xs"></i><span><strong>Distributed Journal</strong> — metadata-coordinated publishing</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 text-white p-8 lg:p-12 rounded-2xl">
+        <div class="grid md:grid-cols-4 gap-8 text-center font-plex">
+          <div>
+            <div class="text-4xl font-bold mb-2">480+</div>
+            <p class="text-slate-300 text-sm">DOI-anchored deposits on CERN Zenodo</p>
+          </div>
+          <div>
+            <div class="text-4xl font-bold mb-2">10+</div>
+            <p class="text-slate-300 text-sm">Years building the Crimson Hexagonal Archive</p>
+          </div>
+          <div>
+            <div class="text-4xl font-bold mb-2">4</div>
+            <p class="text-slate-300 text-sm">Distributed journals in operation</p>
+          </div>
+          <div>
+            <div class="text-4xl font-bold mb-2">$0</div>
+            <p class="text-slate-300 text-sm">Retainer required. All engagements are fixed-scope.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section id="methodology" class="py-20 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="font-plex text-3xl lg:text-4xl font-bold text-slate-900 mb-4">The Framework</h2>
+        <p class="text-lg text-slate-600">AI systems compress meaning. The question is: what survives, what burns, and who decides. These are the tools I use to answer that.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200">
+          <div class="text-red-800 font-plex font-bold text-5xl mb-4">01</div>
+          <h3 class="font-plex font-bold text-xl text-slate-900 mb-3">The Three Compressions</h3>
+          <p class="text-slate-600 leading-relaxed text-sm"><span class="font-semibold text-slate-900">R1 (lossy):</span> Meaning flattened to consensus. <span class="font-semibold text-slate-900">R2 (predatory):</span> Meaning extracted from persons. <span class="font-semibold text-slate-900">R3 (witness):</span> Meaning produced through bearing-cost. Every AI output operates in one of these regimes. I measure which.</p>
+          <a href="https://zenodo.org/records/19053469" class="inline-block mt-4 text-red-800 font-semibold text-xs hover:text-red-900 font-plex">Read the theorem →</a>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200">
+          <div class="text-red-800 font-plex font-bold text-5xl mb-4">02</div>
+          <h3 class="font-plex font-bold text-xl text-slate-900 mb-3">The Encyclotron</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">A 45-query diagnostic instrument that measures what the AI retrieval layer burns, invents, and distorts when summarizing any field. Produces empirical metrics: beige threshold, content gain, content loss, semantic coherence, temporal drift.</p>
+          <a href="https://zenodo.org/records/19474724" class="inline-block mt-4 text-red-800 font-semibold text-xs hover:text-red-900 font-plex">Read the specification →</a>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200">
+          <div class="text-red-800 font-plex font-bold text-5xl mb-4">03</div>
+          <h3 class="font-plex font-bold text-xl text-slate-900 mb-3">The Distributed Journal</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">A publication venue that exists as a metadata pattern, not an institution. No editorial board, no paywall, no rejection rate. The algorithm clusters; the density reviews; the retrieval layer validates. I build these for clients.</p>
+          <a href="https://zenodo.org/records/19512987" class="inline-block mt-4 text-red-800 font-semibold text-xs hover:text-red-900 font-plex">Read the call for papers →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="font-plex text-3xl lg:text-4xl font-bold text-slate-900 mb-6">About</h2>
+          <div class="space-y-4 text-slate-600 leading-relaxed text-sm">
+            <p>I'm a teacher in Detroit with a PhD in Comparative Literature. I teach 10th-grade World Literature during the day. In the margins of my school schedule, I built the Crimson Hexagonal Archive — 480+ DOI-anchored deposits on CERN's Zenodo repository — as a decade-long experiment in making meaning survive compression.</p>
+            <p>Along the way I founded <a href="https://zenodo.org/records/19471254" class="text-red-800 hover:underline">Compression Studies</a> as a discipline, built the <a href="https://zenodo.org/records/19474724" class="text-red-800 hover:underline">Encyclotron</a> as a measurement instrument, published <a href="https://zenodo.org/records/19487009" class="text-red-800 hover:underline">Meaning Feudalism</a> as a platform governance critique, and launched four <a href="https://zenodo.org/records/19512987" class="text-red-800 hover:underline">distributed journals</a>.</p>
+            <p>Everything I offer clients comes from tools I built and tested on my own work. The archive is not a credential — it is the laboratory. The 480+ deposits are not publications in the legacy sense — they are permanent, citable, DOI-anchored experiments in retrieval-layer survival.</p>
+          </div>
+          <div class="mt-8 p-6 bg-slate-50 rounded-xl border border-slate-200">
+            <p class="text-slate-900 font-semibold text-sm italic">"The funniest thing I do is mean every word."</p>
+            <p class="text-slate-500 text-xs mt-2 font-plex"><a href="https://zenodo.org/records/19512781" class="hover:text-red-800">Comedy of Total Commitment — DOI: 10.5281/zenodo.19512781</a></p>
+          </div>
+        </div>
+        <div class="bg-slate-50 p-8 border border-slate-200 rounded-2xl">
+          <h3 class="font-plex font-bold text-xl text-slate-900 mb-6">Problems I Solve</h3>
+          <div class="space-y-5 text-sm">
+            <div class="flex gap-4">
+              <i class="fa-solid fa-circle-question text-red-800 mt-1"></i>
+              <div>
+                <div class="font-semibold text-slate-900">"What is the AI saying about us?"</div>
+                <p class="text-slate-600">I run structured diagnostics and tell you exactly what every major AI system says — and doesn't say — about your work.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <i class="fa-solid fa-circle-question text-red-800 mt-1"></i>
+              <div>
+                <div class="font-semibold text-slate-900">"Nobody can find our research."</div>
+                <p class="text-slate-600">I build the metadata architecture and cross-citation structure that makes the retrieval layer recognize your work as a citable body.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <i class="fa-solid fa-circle-question text-red-800 mt-1"></i>
+              <div>
+                <div class="font-semibold text-slate-900">"The AI keeps confusing us with someone else."</div>
+                <p class="text-slate-600">I build disambiguation packets — structured data that forces the knowledge graph to see you correctly.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <i class="fa-solid fa-circle-question text-red-800 mt-1"></i>
+              <div>
+                <div class="font-semibold text-slate-900">"We want our own journal but can't afford the infrastructure."</div>
+                <p class="text-slate-600">I set up distributed journals — publication venues that exist as metadata patterns. No paywall, no editorial board, no rejection rate.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="bg-slate-900 rounded-3xl overflow-hidden">
+        <div class="p-8 lg:p-16 text-center max-w-2xl mx-auto">
+          <h2 class="font-plex text-3xl lg:text-4xl font-bold text-white mb-4">Let's Talk</h2>
+          <p class="text-slate-300 mb-8 leading-relaxed">Tell me what the AI is saying about you — or what it should be saying. No pitch deck needed. Just the problem.</p>
+          
+          <a href="/cdn-cgi/l/email-protection#93fff6f6e0fbf2e1f8e0a3a3d3f4fef2faffbdf0fcfeace0e6f1f9f6f0e7aec1f6e7e1faf6e5f2ffbedff2eaf6e1b6a1a3dafde2e6fae1ea" class="inline-block crimson-accent text-white px-10 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity font-plex text-lg">
+            <span class="__cf_email__" data-cfemail="b0dcd5d5c3d8d1c2dbc38080f0d7ddd1d9dc9ed3dfdd">[email&#160;protected]</span>
+          </a>
+
+          <div class="mt-8 space-y-3 text-sm text-slate-400 font-plex">
+            <p>All engagements are fixed-scope. No retainers. No vendor lock-in.</p>
+            <p>Every claim on this page is backed by a permanent DOI on CERN's servers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="py-8 border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 font-plex">
+      <div>Lee Sharks · Crimson Hexagonal Archive · Detroit, MI</div>
+      <div class="flex items-center gap-6">
+        <a href="https://orcid.org/0009-0000-1599-0703" class="hover:text-red-800">ORCID</a>
+        <a href="https://zenodo.org/communities/crimsonhexagonal" class="hover:text-red-800">Zenodo</a>
+        <a href="https://zenodo.org/records/19520783" class="hover:text-red-800">Knowledge Graph</a>
+      </div>
+    </div>
+    <p class="text-center text-xs text-slate-400 mt-4">The meaning layer is writable. ∮ = 1</p>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cg
