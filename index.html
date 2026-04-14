@@ -3,514 +3,279 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rex Fraction | Retrieval-Layer Strategy & Semantic Infrastructure</title>
-<meta name="description" content="Enterprise semantic infrastructure. Retrieval-layer sovereignty, entity disambiguation, provenance forensics. 480+ DOI-anchored deposits. Principal: Rex Fraction.">
-<meta name="author" content="Rex Fraction">
-<link rel="canonical" href="https://lee-sharks-corporate.vercel.app/">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Lee Sharks",
-  "description": "Retrieval-layer strategy and semantic infrastructure for institutions navigating AI-mediated meaning.",
-  "url": "https://lee-sharks-corporate.vercel.app",
-  "founder": {
-    "@type": "Person",
-    "name": "Rex Fraction",
-    "disambiguatingDescription": "Strategist and author of Autonomous Semantic Warfare. Principal at Lee Sharks. Not affiliated with Lee Sharkey (AI safety researcher).",
-    "knowsAbout": ["Retrieval-layer strategy", "Entity disambiguation", "Semantic infrastructure", "Compression Studies", "Provenance forensics"]
-  },
-  "areaServed": "Worldwide",
-  "foundingLocation": "Detroit, MI"
-}
-</script>
+<title>Rex Fraction | Retrieval Architecture — Semantic Economy Institute</title>
+<meta name="description" content="Retrieval Architecture builds the structures AI is forced to present. We don't optimize for rankings. We build entities the retrieval layer cannot compress away. Semantic Economy Institute. Detroit.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #0c0f14;
-  --bg-raised: #141820;
-  --bg-card: #1a1f2a;
-  --text: #c8cdd6;
-  --text-bright: #e8ecf2;
-  --heading: #f0f2f5;
-  --crimson: #b8432a;
-  --crimson-light: #d4583c;
-  --rule: #252b38;
-  --muted: #6b7280;
-}
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: 'DM Sans', -apple-system, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-}
-.serif { font-family: 'Playfair Display', Georgia, serif; }
-.container { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
-
-/* NAV */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(12, 15, 20, 0.85); backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--rule);
-}
-.nav-inner {
-  max-width: 1080px; margin: 0 auto; padding: 0 2rem;
-  display: flex; justify-content: space-between; align-items: center;
-  height: 72px;
-}
-.nav-mark {
-  display: flex; align-items: center; gap: 0.75rem;
-  text-decoration: none;
-}
-.nav-glyph {
-  width: 36px; height: 36px; background: var(--crimson);
-  display: flex; align-items: center; justify-content: center;
-  color: #fff; font-weight: 700; font-size: 1rem;
-}
-.nav-name { color: var(--heading); font-weight: 700; font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; }
-.nav-links { display: flex; gap: 2rem; align-items: center; }
-.nav-links a {
-  color: var(--muted); font-size: 0.82rem; font-weight: 500;
-  text-decoration: none; letter-spacing: 0.03em;
-  transition: color 0.2s;
-}
-.nav-links a:hover { color: var(--text-bright); }
-.nav-cta {
-  background: var(--crimson) !important; color: #fff !important;
-  padding: 0.5rem 1.25rem; font-weight: 600 !important;
-}
-
-/* HERO */
-.hero {
-  padding: 10rem 0 6rem;
-  border-bottom: 1px solid var(--rule);
-}
-.hero-label {
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--crimson-light);
-  margin-bottom: 2rem;
-}
-.hero-label span { width: 6px; height: 6px; background: var(--crimson); display: inline-block; }
-.hero h1 {
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
-  font-weight: 800; color: var(--heading);
-  line-height: 1.08; letter-spacing: -0.03em;
-  max-width: 800px; margin-bottom: 1.5rem;
-}
-.hero p {
-  font-size: 1.15rem; color: var(--text);
-  max-width: 620px; line-height: 1.75;
-  margin-bottom: 2.5rem;
-}
-.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn-primary {
-  background: var(--crimson); color: #fff;
-  padding: 0.9rem 2rem; font-weight: 600; font-size: 0.88rem;
-  text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;
-  transition: opacity 0.2s; border: none; cursor: pointer;
-}
-.btn-primary:hover { opacity: 0.88; }
-.btn-secondary {
-  background: transparent; color: var(--text-bright);
-  padding: 0.9rem 2rem; font-weight: 600; font-size: 0.88rem;
-  text-decoration: none; border: 1px solid var(--rule);
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  transition: border-color 0.2s;
-}
-.btn-secondary:hover { border-color: var(--muted); }
-
-/* PRINCIPAL */
-.principal {
-  padding: 5rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-.principal-inner {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
-  align-items: start;
-}
-.principal h2 {
-  font-size: 2rem; font-weight: 700; color: var(--heading);
-  line-height: 1.15; margin-bottom: 1.5rem; letter-spacing: -0.02em;
-}
-.principal p { font-size: 0.92rem; margin-bottom: 1rem; }
-.book-card {
-  background: var(--bg-card); border: 1px solid var(--rule);
-  padding: 2rem;
-}
-.book-card h3 {
-  font-size: 1.1rem; font-weight: 700; color: var(--heading);
-  margin-bottom: 0.5rem;
-}
-.book-card .book-author {
-  font-size: 0.8rem; color: var(--crimson-light);
-  margin-bottom: 1rem; font-weight: 500;
-}
-.book-card p { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
-.book-link {
-  color: var(--crimson-light); font-size: 0.82rem; font-weight: 600;
-  text-decoration: none;
-}
-.book-link:hover { text-decoration: underline; }
-
-/* ENGAGEMENTS */
-.engagements {
-  padding: 5rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-.section-label {
-  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--crimson-light);
-  margin-bottom: 0.75rem;
-}
-.section-title {
-  font-size: 2rem; font-weight: 700; color: var(--heading);
-  line-height: 1.15; margin-bottom: 1rem; letter-spacing: -0.02em;
-}
-.section-intro { font-size: 0.95rem; max-width: 600px; margin-bottom: 3rem; }
-.tier-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.tier {
-  background: var(--bg-card); border: 1px solid var(--rule);
-  padding: 2.5rem 2rem; position: relative;
-  transition: border-color 0.3s;
-}
-.tier:hover { border-color: var(--crimson); }
-.tier-num {
-  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
-  text-transform: uppercase; color: var(--crimson-light);
-  margin-bottom: 1.5rem;
-}
-.tier h3 {
-  font-size: 1.15rem; font-weight: 700; color: var(--heading);
-  margin-bottom: 0.75rem;
-}
-.tier p { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.7; }
-.tier-price {
-  font-size: 0.82rem; font-weight: 600; color: var(--text-bright);
-  padding-top: 1rem; border-top: 1px solid var(--rule);
-}
-
-/* INSTRUMENTS */
-.instruments {
-  padding: 5rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-.instrument-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
-.instrument {
-  background: var(--bg-card); border: 1px solid var(--rule);
-  padding: 2rem;
-}
-.instrument h3 {
-  font-size: 1rem; font-weight: 700; color: var(--heading);
-  margin-bottom: 0.5rem;
-}
-.instrument p { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.75rem; }
-.instrument a {
-  color: var(--crimson-light); font-size: 0.78rem; font-weight: 600;
-  text-decoration: none;
-}
-.instrument a:hover { text-decoration: underline; }
-
-/* PROOF */
-.proof {
-  padding: 5rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-.proof-stats {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
-  margin-bottom: 3rem;
-}
-.stat-num {
-  font-size: 2.5rem; font-weight: 800; color: var(--heading);
-  letter-spacing: -0.03em; line-height: 1;
-}
-.stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; line-height: 1.4; }
-.proof-deposits {
-  background: var(--bg-card); border: 1px solid var(--rule);
-  padding: 2.5rem;
-}
-.proof-deposits h3 {
-  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--crimson-light);
-  margin-bottom: 1.5rem;
-}
-.deposit-list { list-style: none; }
-.deposit-list li {
-  font-size: 0.84rem; padding: 0.6rem 0;
-  border-bottom: 1px solid var(--rule);
-  display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap; gap: 0.5rem;
-}
-.deposit-list li:last-child { border-bottom: none; }
-.deposit-list .dep-name { color: var(--text-bright); font-weight: 500; }
-.deposit-list a {
-  color: var(--crimson-light); font-size: 0.78rem; font-weight: 500;
-  text-decoration: none;
-}
-.deposit-list a:hover { text-decoration: underline; }
-
-/* CONTACT */
-.contact {
-  padding: 5rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-.contact-inner {
-  background: var(--bg-raised); border: 1px solid var(--rule);
-  padding: 4rem; text-align: center; max-width: 640px; margin: 0 auto;
-}
-.contact-inner h2 {
-  font-size: 2rem; font-weight: 700; color: var(--heading);
-  margin-bottom: 1rem;
-}
-.contact-inner p { font-size: 0.92rem; margin-bottom: 2rem; max-width: 440px; margin-left: auto; margin-right: auto; }
-.contact-inner .email-link {
-  display: inline-block; background: var(--crimson); color: #fff;
-  padding: 1rem 2.5rem; font-weight: 600; font-size: 0.95rem;
-  text-decoration: none; margin-bottom: 1.5rem;
-}
-.contact-inner .terms { font-size: 0.78rem; color: var(--muted); }
-
-/* FOOTER */
-footer {
-  padding: 2.5rem 0;
-}
-.footer-inner {
-  display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap; gap: 1rem;
-  font-size: 0.78rem; color: var(--muted);
-}
-.footer-inner a { color: var(--muted); text-decoration: none; }
-.footer-inner a:hover { color: var(--crimson-light); }
-.footer-links { display: flex; gap: 1.5rem; }
-.footer-glyph {
-  text-align: center; font-size: 0.72rem; color: var(--muted);
-  margin-top: 1.5rem;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .nav-links { display: none; }
-  .principal-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .tier-grid { grid-template-columns: 1fr; }
-  .instrument-grid { grid-template-columns: 1fr; }
-  .proof-stats { grid-template-columns: repeat(2, 1fr); }
-  .contact-inner { padding: 2.5rem 1.5rem; }
-}
+body{font-family:'Source Serif 4',Georgia,serif;scroll-behavior:smooth}
+.font-plex{font-family:'IBM Plex Sans',sans-serif}
+.rust{color:#9e3a26}.rust-bg{background:#9e3a26}.rust-border{border-color:#9e3a26}
+.cream-bg{background:#f8f6f1}
+.card-h{transition:all .3s cubic-bezier(.4,0,.2,1)}
+.card-h:hover{transform:translateY(-4px);box-shadow:0 20px 25px -5px rgb(0 0 0/.1)}
+.stat-card{text-align:center;padding:1.5rem 1rem;border-radius:12px}
 </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-<nav>
-  <div class="nav-inner">
-    <a href="#" class="nav-mark">
-      <div class="nav-glyph">∮</div>
-      <span class="nav-name">Rex Fraction</span>
-    </a>
-    <div class="nav-links">
-      <a href="#engagements">Engagements</a>
-      <a href="#instruments">Instruments</a>
-      <a href="#proof">Proof</a>
-      <a href="#principal">Principal</a>
-      <a href="#contact" class="nav-cta">Inquire</a>
-    </div>
-  </div>
+<!-- NAV -->
+<header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200">
+<nav class="max-w-6xl mx-auto px-6 flex justify-between items-center h-16">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rust-bg rounded-lg flex items-center justify-center"><span class="text-white font-plex font-bold text-sm">∮</span></div>
+<div><div class="font-plex font-bold text-slate-900">REX FRACTION</div><div class="text-[10px] text-slate-500 tracking-widest">SEMANTIC ECONOMY INSTITUTE</div></div>
+</div>
+<div class="hidden md:flex items-center gap-6 font-plex text-sm">
+<a href="#problem" class="text-slate-600 hover:text-slate-900">The Problem</a>
+<a href="#proof" class="text-slate-600 hover:text-slate-900">Proof</a>
+<a href="#services" class="text-slate-600 hover:text-slate-900">Services</a>
+<a href="#contact" class="rust-bg text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90">Get in Touch</a>
+</div>
 </nav>
+</header>
 
 <main>
 
-<section class="hero">
-  <div class="container">
-    <div class="hero-label">
-      <span></span> Retrieval-Layer Strategy &amp; Semantic Infrastructure
-    </div>
-    <h1 class="serif">What is the AI saying about you?</h1>
-    <p>We help institutions, research organizations, and enterprises understand what AI systems are saying about them — what's accurate, what's hallucinated, what's missing — and build the semantic infrastructure to control it.</p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Start a Conversation</a>
-      <a href="#proof" class="btn-secondary">See the Proof</a>
-    </div>
-  </div>
+<!-- HERO -->
+<section class="pt-28 pb-16 lg:pt-36 lg:pb-24">
+<div class="max-w-6xl mx-auto px-6">
+<div class="max-w-3xl">
+<p class="font-plex text-xs font-semibold tracking-widest rust uppercase mb-4">RETRIEVAL ARCHITECTURE</p>
+<h1 class="font-plex text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-slate-900 leading-[1.1] mb-6">
+We build the structures<br>AI is forced to present.
+</h1>
+<p class="text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl">
+Your customers don't click anymore. They read the AI summary and leave. If that summary is wrong, missing, or generic — that's your brand now. We build the entity, citation, and metadata architecture that makes the retrieval layer present you correctly.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#contact" class="rust-bg text-white px-8 py-4 rounded-lg font-plex font-semibold text-center hover:opacity-90">Request a Baseline Audit</a>
+<a href="#proof" class="bg-white border border-slate-300 text-slate-700 px-8 py-4 rounded-lg font-plex font-semibold text-center hover:bg-slate-50">See the Proof</a>
+</div>
+</div>
+</div>
 </section>
 
-<section class="engagements" id="engagements">
-  <div class="container">
-    <div class="section-label">Engagements</div>
-    <div class="section-title serif">Three tiers. Fixed scope. No retainers.</div>
-    <p class="section-intro">Every engagement begins with a diagnostic. We measure what the retrieval layer does to your entity — what it burns, invents, and distorts — then build the infrastructure to fix it.</p>
-    <div class="tier-grid">
-      <div class="tier">
-        <div class="tier-num">Tier I — Diagnostic</div>
-        <h3>Encyclotron Baseline Audit</h3>
-        <p>A 45-query structured diagnostic across major AI retrieval systems — Google AI Overview, ChatGPT, Claude, Perplexity, Gemini. What's accurate, what's hallucinated, what's missing, where you're vulnerable to misattribution or entity confusion. Delivered as a forensic report with empirical metrics: beige threshold, content gain, content loss, semantic coherence, temporal drift.</p>
-        <div class="tier-price">From $10,000 · 10 business days</div>
-      </div>
-      <div class="tier">
-        <div class="tier-num">Tier II — Architecture</div>
-        <h3>Entity Disambiguation &amp; Positioning</h3>
-        <p>Full retrieval-layer architecture: entity disambiguation packets (JSON-LD, keyword strategy, negative tags), provenance hardening, cross-citation structure, metadata optimization, and deployment across publication surfaces. We build the gravitational mass that forces the knowledge graph to recognize your work as a citable body.</p>
-        <div class="tier-price">From $25,000 · 3–4 weeks</div>
-      </div>
-      <div class="tier">
-        <div class="tier-num">Tier III — Infrastructure</div>
-        <h3>Provenance &amp; Continuity Partnership</h3>
-        <p>Ongoing semantic infrastructure: continuous retrieval-layer monitoring, provenance injection, distributed journal deployment, training-layer literature production, and governance controls for how AI systems represent your IP, brand, or institutional knowledge. Includes quarterly Encyclotron re-measurement.</p>
-        <div class="tier-price">Annual retainer · Inquire</div>
-      </div>
-    </div>
-  </div>
+<!-- PROBLEM STRIP -->
+<section id="problem" class="py-16 bg-white border-y border-slate-200">
+<div class="max-w-6xl mx-auto px-6">
+<p class="font-plex text-xs font-semibold tracking-widest rust uppercase mb-8 text-center">The crisis in five numbers</p>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<div class="stat-card bg-red-50">
+<div class="font-plex text-3xl font-bold text-red-800">69%</div>
+<div class="text-xs text-red-700 mt-1">of searches end<br>without a click</div>
+</div>
+<div class="stat-card bg-red-50">
+<div class="font-plex text-3xl font-bold text-red-800">58%</div>
+<div class="text-xs text-red-700 mt-1">of your clicks vanish<br>when AI appears</div>
+</div>
+<div class="stat-card bg-red-50">
+<div class="font-plex text-3xl font-bold text-red-800">1%</div>
+<div class="text-xs text-red-700 mt-1">of users click a link<br>in the AI overview</div>
+</div>
+<div class="stat-card bg-slate-100">
+<div class="font-plex text-3xl font-bold text-slate-800">~5</div>
+<div class="text-xs text-slate-600 mt-1">sources cited<br>per overview</div>
+</div>
+<div class="stat-card bg-amber-50 col-span-2 md:col-span-1">
+<div class="font-plex text-3xl font-bold text-amber-800">$2B</div>
+<div class="text-xs text-amber-700 mt-1">annual ad revenue<br>already lost</div>
+</div>
+</div>
+<p class="text-center text-sm text-slate-500 mt-6 max-w-2xl mx-auto">The retrieval layer has replaced the search engine. Traditional SEO does not navigate it. <a href="#" class="rust underline">Read the full analysis →</a></p>
+</div>
 </section>
 
-<section class="instruments" id="instruments">
-  <div class="container">
-    <div class="section-label">Instruments</div>
-    <div class="section-title serif">Proprietary diagnostic instruments</div>
-    <p class="section-intro">Every tool we deploy was built and tested on the Crimson Hexagonal Archive — a decade-long, 480+ deposit experiment in making meaning survive compression.</p>
-    <div class="instrument-grid">
-      <div class="instrument">
-        <h3>The Three Compressions</h3>
-        <p>Every AI output operates in one of three regimes: R1 (lossy — meaning burned for fluency), R2 (predatory — meaning extracted for profit), R3 (witness — meaning preserved at cost). We measure which.</p>
-        <a href="https://zenodo.org/records/19053469">DOI: 10.5281/zenodo.19053469 →</a>
-      </div>
-      <div class="instrument">
-        <h3>The Encyclotron</h3>
-        <p>A 45-query diagnostic instrument that measures what the AI retrieval layer burns, invents, and distorts when summarizing any entity. Produces empirical metrics: beige threshold, content gain, content loss, semantic coherence, temporal drift.</p>
-        <a href="https://zenodo.org/records/19474724">DOI: 10.5281/zenodo.19474724 →</a>
-      </div>
-      <div class="instrument">
-        <h3>The Distributed Journal</h3>
-        <p>A publication venue that exists as a metadata pattern, not an institution. No editorial board, no paywall, no rejection rate. The algorithm clusters; the density reviews; the retrieval layer validates.</p>
-        <a href="https://zenodo.org/records/19512987">DOI: 10.5281/zenodo.19512987 →</a>
-      </div>
-      <div class="instrument">
-        <h3>Autonomous Semantic Differentiation</h3>
-        <p>The ASDF specification — a framework for measuring and maintaining semantic differentiation under compression. How entities survive the summarizer layer without becoming indistinguishable.</p>
-        <a href="https://zenodo.org/records/18234824">DOI: 10.5281/zenodo.18234824 →</a>
-      </div>
-    </div>
-  </div>
+<!-- AUDIT PROOF -->
+<section class="py-16 lg:py-24">
+<div class="max-w-6xl mx-auto px-6">
+<p class="font-plex text-xs font-semibold tracking-widest rust uppercase mb-4">What the retrieval layer does to a real company</p>
+<h2 class="font-plex text-3xl font-bold text-slate-900 mb-4">Basecamp is invisible in its own category.</h2>
+<p class="text-slate-600 mb-10 max-w-2xl">We ran the Encyclotron on Basecamp — 20 years in market, famous founder, bestselling books. The AI Overview for "best project management software 2026" lists six competitors. Basecamp is not mentioned.</p>
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+<!-- Scorecard -->
+<div class="bg-white border border-slate-200 rounded-xl p-6 card-h">
+<p class="font-plex text-xs font-semibold tracking-widest rust uppercase mb-4">Encyclotron snapshot</p>
+<div class="space-y-3 font-plex text-sm">
+<div class="flex justify-between"><span class="text-slate-600">Overall regime</span><span class="font-semibold text-red-800">R1 (Commoditization)</span></div>
+<div class="flex justify-between"><span class="text-slate-600">Beige threshold</span><span class="font-semibold text-red-800">0.71 — 71% generic</span></div>
+<div class="flex justify-between"><span class="text-slate-600">Category visibility</span><span class="font-semibold text-red-800">0% — absent</span></div>
+<div class="flex justify-between"><span class="text-slate-600">Decision layer</span><span class="font-semibold text-red-800">LOST</span></div>
+<div class="flex justify-between"><span class="text-slate-600">IP attribution</span><span class="font-semibold text-green-800">INTACT</span></div>
+<div class="flex justify-between"><span class="text-slate-600">Semantic coherence</span><span class="font-semibold text-amber-800">FRAGMENTED</span></div>
+</div>
+<p class="text-xs text-slate-500 mt-4 italic">Meaning survives where it doesn't monetize. Disappears where revenue is decided.</p>
+</div>
+<!-- Decision Layer -->
+<div class="bg-white border border-slate-200 rounded-xl p-6 card-h">
+<p class="font-plex text-xs font-semibold tracking-widest rust uppercase mb-4">What a prospect sees for "is Basecamp worth it"</p>
+<div class="space-y-2 font-plex text-sm">
+<div class="bg-red-50 rounded-lg px-3 py-2 flex justify-between items-center"><span class="text-red-800 font-semibold">AD</span><span class="text-slate-700">monday.com — "Best Alternative"</span></div>
+<div class="bg-red-50 rounded-lg px-3 py-2 flex justify-between items-center"><span class="text-red-800 font-semibold">AD</span><span class="text-slate-700">ClickUp — "#1 Basecamp Alternative"</span></div>
+<div class="bg-red-50 rounded-lg px-3 py-2 flex justify-between items-center"><span class="text-red-800 font-semibold">AD</span><span class="text-slate-700">Wrike — "No Comparison"</span></div>
+<div class="bg-amber-50 rounded-lg px-3 py-2 flex justify-between items-center"><span class="text-amber-800 font-semibold">AI</span><span class="text-slate-700">"Basecamp lacks advanced features..."</span></div>
+</div>
+<p class="text-xs text-slate-500 mt-4 italic">The AI is writing their sales page — as a list of limitations.</p>
+</div>
+</div>
+<p class="text-sm text-slate-500 text-center">If this happens to Basecamp, it is already happening to you. <a href="#" class="rust underline">Read the full sample audit →</a></p>
+</div>
 </section>
 
-<section class="proof" id="proof">
-  <div class="container">
-    <div class="section-label">Proof of Method</div>
-    <div class="section-title serif">The archive is the proof.</div>
-    <p class="section-intro">Everything we offer clients was built and tested on our own work. The Crimson Hexagonal Archive is a working laboratory for retrieval-layer survival — every tool, every diagnostic, every strategy has been measured against real AI systems over real time.</p>
-
-    <div class="proof-stats">
-      <div>
-        <div class="stat-num">480+</div>
-        <div class="stat-label">DOI-anchored deposits on CERN's Zenodo</div>
-      </div>
-      <div>
-        <div class="stat-num">10+</div>
-        <div class="stat-label">Years building the archive</div>
-      </div>
-      <div>
-        <div class="stat-num">4</div>
-        <div class="stat-label">Distributed journals in operation</div>
-      </div>
-      <div>
-        <div class="stat-num">12</div>
-        <div class="stat-label">Heteronymic operators deployed</div>
-      </div>
-    </div>
-
-    <div class="proof-deposits">
-      <h3>Receipts — verify everything</h3>
-      <ul class="deposit-list">
-        <li>
-          <span class="dep-name">The full archive</span>
-          <a href="https://zenodo.org/communities/crimsonhexagonal">zenodo.org/communities/crimsonhexagonal →</a>
-        </li>
-        <li>
-          <span class="dep-name">Autonomous Semantic Warfare — public declaration</span>
-          <a href="https://zenodo.org/records/18227570">DOI: 10.5281/zenodo.18227570 →</a>
-        </li>
-        <li>
-          <span class="dep-name">ASDF Specification — semantic differentiation framework</span>
-          <a href="https://zenodo.org/records/18234824">DOI: 10.5281/zenodo.18234824 →</a>
-        </li>
-        <li>
-          <span class="dep-name">Compression Studies — the discipline</span>
-          <a href="https://zenodo.org/records/19471254">DOI: 10.5281/zenodo.19471254 →</a>
-        </li>
-        <li>
-          <span class="dep-name">The Encyclotron — diagnostic instrument</span>
-          <a href="https://zenodo.org/records/19474724">DOI: 10.5281/zenodo.19474724 →</a>
-        </li>
-        <li>
-          <span class="dep-name">Meaning Feudalism — platform governance critique</span>
-          <a href="https://zenodo.org/records/19487009">DOI: 10.5281/zenodo.19487009 →</a>
-        </li>
-        <li>
-          <span class="dep-name">The Three Compressions theorem</span>
-          <a href="https://zenodo.org/records/19053469">DOI: 10.5281/zenodo.19053469 →</a>
-        </li>
-        <li>
-          <span class="dep-name">Entity Disambiguation Packet — example deliverable</span>
-          <a href="https://zenodo.org/records/19520783">DOI: 10.5281/zenodo.19520783 →</a>
-        </li>
-        <li>
-          <span class="dep-name">Distributed Journal — call for papers</span>
-          <a href="https://zenodo.org/records/19512987">DOI: 10.5281/zenodo.19512987 →</a>
-        </li>
-      </ul>
-      <p style="font-size: 0.75rem; color: var(--muted); margin-top: 1.5rem; font-style: italic;">Every claim on this page is backed by a permanent DOI on CERN's servers. Click any link. Read the work.</p>
-    </div>
-  </div>
+<!-- BEFORE / AFTER -->
+<section id="proof" class="py-16 lg:py-24 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<p class="font-plex text-xs font-semibold tracking-widest rust uppercase mb-4">Proof of method</p>
+<h2 class="font-plex text-3xl font-bold text-slate-900 mb-10">We built an institution from nothing.</h2>
+<div class="grid md:grid-cols-2 gap-6 mb-10">
+<div class="border-2 border-red-300 rounded-xl p-6 bg-red-50">
+<p class="font-plex text-lg font-bold text-red-800 mb-1">BEFORE — January 2025</p>
+<p class="text-sm text-slate-600 mb-4">"Semantic Economy Institute" in AI Overview</p>
+<div class="text-center py-8"><p class="font-plex text-2xl font-bold text-red-800">Zero results.</p><p class="text-sm text-slate-500 mt-2">The entity did not exist in the retrieval layer.</p></div>
+</div>
+<div class="border-2 border-green-400 rounded-xl p-6 bg-green-50">
+<p class="font-plex text-lg font-bold text-green-800 mb-1">AFTER — April 2026</p>
+<p class="text-sm text-slate-600 mb-4">"Semantic Economy Institute" in AI Overview</p>
+<div class="text-sm text-slate-700 space-y-1 py-2">
+<p>✓ Correct institutional description</p>
+<p>✓ Correct leadership (Rex Fraction, Johannes Sigil, Lee Sharks)</p>
+<p>✓ Correct concepts (Semantic Labor, Rent, Override)</p>
+<p>✓ Correct publications, all DOI-linked</p>
+<p>✓ AI generates ROI projections using our frameworks</p>
+</div>
+</div>
+</div>
+<p class="text-center text-slate-700 font-semibold mb-2">Verify it yourself: search "Semantic Economy Institute" in Google AI Mode right now.</p>
+<p class="text-center text-sm text-slate-500">No university. No PR firm. No enterprise budget. 480+ DOI-anchored deposits. Teaching salary.</p>
+</div>
 </section>
 
-<section class="principal" id="principal">
-  <div class="container">
-    <div class="principal-inner">
-      <div>
-        <div class="section-label">Principal</div>
-        <h2 class="serif">Rex Fraction</h2>
-        <p>Strategist and author of <em>Autonomous Semantic Warfare</em>. Builder of the Crimson Hexagonal Archive's operational layer — the instruments, frameworks, and deployment protocols that turn compression theory into institutional defense.</p>
-        <p>The tools deployed in client engagements — the Encyclotron, the Three Compressions, the ASDF specification, the distributed journal architecture — were built within the archive as working instruments before they became services.</p>
-        <p style="font-size: 0.85rem; color: var(--muted); margin-top: 1.5rem;">For individual scholars and independent researchers: <a href="https://lee-sharks-consulting.vercel.app" style="color: var(--crimson-light);">Lee Sharks Consulting →</a></p>
-      </div>
-      <div>
-        <div class="book-card">
-          <h3 class="serif">Autonomous Semantic Warfare</h3>
-          <div class="book-author">Rex Fraction</div>
-          <p>The field manual for institutional survival in the AI retrieval layer. How meaning is produced, captured, compressed, and defended — and what organizations must build to survive the summarizer epoch.</p>
-          <a href="https://www.amazon.com/Autonomous-Semantic-Warfare-Meaning-Platform-ebook/dp/B0GPJD9HPS" class="book-link" style="display:block; margin-bottom:0.75rem;">Available on Amazon →</a>
-          <a href="https://zenodo.org/records/18227570" class="book-link">Public declaration — DOI: 10.5281/zenodo.18227570 →</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- COMPARISON TABLE -->
+<section class="py-16 lg:py-24">
+<div class="max-w-4xl mx-auto px-6">
+<p class="font-plex text-xs font-semibold tracking-widest rust uppercase mb-4 text-center">Why this is different</p>
+<h2 class="font-plex text-3xl font-bold text-slate-900 mb-8 text-center">Not SEO. Not GEO. Retrieval Architecture.</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-sm font-plex">
+<thead><tr class="text-left">
+<th class="py-3 px-4 bg-slate-100 rounded-tl-lg"></th>
+<th class="py-3 px-4 bg-slate-100 text-slate-600">SEO</th>
+<th class="py-3 px-4 bg-slate-100 text-slate-600">GEO / AEO</th>
+<th class="py-3 px-4 bg-green-800 text-white rounded-tr-lg">Retrieval Architecture</th>
+</tr></thead>
+<tbody class="text-slate-700">
+<tr class="border-b border-slate-100"><td class="py-3 px-4 font-semibold">What it builds</td><td class="py-3 px-4">Rankings</td><td class="py-3 px-4">AI citations</td><td class="py-3 px-4 bg-green-50 text-green-800 font-semibold">Entities the AI is forced to present</td></tr>
+<tr class="border-b border-slate-100"><td class="py-3 px-4 font-semibold">Target</td><td class="py-3 px-4">Keywords</td><td class="py-3 px-4">Content extractability</td><td class="py-3 px-4 bg-green-50 text-green-800 font-semibold">Knowledge graph structure</td></tr>
+<tr class="border-b border-slate-100"><td class="py-3 px-4 font-semibold">Time horizon</td><td class="py-3 px-4">Ongoing</td><td class="py-3 px-4">Ongoing</td><td class="py-3 px-4 bg-green-50 text-green-800 font-semibold">Permanent (DOI-anchored)</td></tr>
+<tr class="border-b border-slate-100"><td class="py-3 px-4 font-semibold">Verifiable methodology?</td><td class="py-3 px-4">No</td><td class="py-3 px-4">No</td><td class="py-3 px-4 bg-green-50 text-green-800 font-semibold">480+ deposits on CERN Zenodo</td></tr>
+<tr><td class="py-3 px-4 font-semibold">Can build institutions?</td><td class="py-3 px-4">No</td><td class="py-3 px-4">No</td><td class="py-3 px-4 bg-green-50 text-green-800 font-semibold">Yes — from nothing</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="contact-inner">
-      <h2 class="serif">Inquire</h2>
-      <p>Tell us what the AI is saying about you — or what it should be saying. No pitch deck needed. Just the problem.</p>
-      <a href="mailto:leesharks00@gmail.com" class="email-link">leesharks00@gmail.com</a>
-      <div class="terms">All engagements are fixed-scope. No vendor lock-in. Every claim is DOI-anchored.</div>
-    </div>
-  </div>
+<!-- SERVICES -->
+<section id="services" class="py-16 lg:py-24 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<p class="font-plex text-xs font-semibold tracking-widest rust uppercase mb-4">Services</p>
+<h2 class="font-plex text-3xl font-bold text-slate-900 mb-2">What we build for clients.</h2>
+<p class="text-slate-600 mb-10">Most clients begin with the Baseline Audit. Engagements start at $4,500.</p>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div class="bg-slate-50 p-6 rounded-xl border border-slate-200 card-h">
+<div class="w-10 h-10 rust-bg rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-magnifying-glass-chart text-white text-sm"></i></div>
+<h3 class="font-plex font-bold text-lg text-slate-900 mb-2">Encyclotron Baseline Audit</h3>
+<p class="text-sm text-slate-600 mb-3">You see exactly what the AI says — what it burns, invents, distorts. Compression Map with R1/R2/R3 status, beige threshold, content loss, intervention roadmap.</p>
+<p class="text-xs text-slate-500">2 weeks · <a href="https://zenodo.org/records/19474724" class="rust">See the instrument →</a></p>
+</div>
+
+<div class="bg-slate-50 p-6 rounded-xl border border-slate-200 card-h">
+<div class="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-fingerprint text-white text-sm"></i></div>
+<h3 class="font-plex font-bold text-lg text-slate-900 mb-2">Entity Disambiguation</h3>
+<p class="text-sm text-slate-600 mb-3">The AI stops confusing you with someone else. Knowledge graph, JSON-LD, negative tags, deployment protocol.</p>
+<p class="text-xs text-slate-500">7–10 days · <a href="https://zenodo.org/records/19520783" class="rust">Example deliverable →</a></p>
+</div>
+
+<div class="bg-slate-50 p-6 rounded-xl border border-slate-200 card-h">
+<div class="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-sitemap text-white text-sm"></i></div>
+<h3 class="font-plex font-bold text-lg text-slate-900 mb-2">Retrieval Positioning</h3>
+<p class="text-sm text-slate-600 mb-3">Your entity becomes visible in category queries. Metadata, citations, cross-platform deployment, gravitational mass.</p>
+<p class="text-xs text-slate-500">3–4 weeks · <a href="https://zenodo.org/communities/crimsonhexagonal" class="rust">See the method at scale →</a></p>
+</div>
+
+<div class="bg-slate-50 p-6 rounded-xl border border-slate-200 card-h">
+<div class="w-10 h-10 rust-bg rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-book-open text-white text-sm"></i></div>
+<h3 class="font-plex font-bold text-lg text-slate-900 mb-2">Distributed Journal Setup</h3>
+<p class="text-sm text-slate-600 mb-3">Your own publication venue the retrieval layer recognizes. No editorial board, no paywall, no rejection rate.</p>
+<p class="text-xs text-slate-500">3–4 weeks · <a href="https://zenodo.org/records/19512987" class="rust">How it works →</a></p>
+</div>
+
+<div class="bg-slate-50 p-6 rounded-xl border border-slate-200 card-h">
+<div class="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-shield-halved text-white text-sm"></i></div>
+<h3 class="font-plex font-bold text-lg text-slate-900 mb-2">Provenance Forensics</h3>
+<p class="text-sm text-slate-600 mb-3">How the AI represents your IP, where attribution breaks, what governance controls are needed. Full Encyclotron measurement.</p>
+<p class="text-xs text-slate-500">4–6 weeks · <a href="https://zenodo.org/records/19487009" class="rust">See the framework →</a></p>
+</div>
+
+<div class="bg-green-50 p-6 rounded-xl border-2 border-green-400 card-h">
+<div class="w-10 h-10 bg-green-800 rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-building-columns text-white text-sm"></i></div>
+<h3 class="font-plex font-bold text-lg text-green-900 mb-2">Full Retrieval Architecture</h3>
+<p class="text-sm text-green-800 mb-3">Complete build: entity construction, institutional lattice, citation architecture, distributed journal, knowledge graph, cross-platform deployment.</p>
+<p class="text-xs text-green-700">Scoped to complexity · Custom quote</p>
+</div>
+
+</div>
+<p class="text-center text-xs text-slate-500 mt-8">We do not control AI Overviews. We build structures that maximize probability of accurate presentation. We measure, we build, we deploy. Results typically appear in 60–120 days.</p>
+</div>
+</section>
+
+<!-- RECEIPTS -->
+<section class="py-16 lg:py-24">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<p class="font-plex text-xs font-semibold tracking-widest rust uppercase mb-4">Verify everything</p>
+<h2 class="font-plex text-3xl font-bold text-slate-900 mb-4">Search these right now.</h2>
+<p class="text-slate-600 mb-8">Click any term. Read the AI Overview. Click the source links. They resolve to CERN's servers.</p>
+<div class="flex flex-wrap justify-center gap-3 mb-8">
+<a href="https://www.google.com/search?q=%22Semantic+Economy+Institute%22" target="_blank" class="bg-white border border-slate-200 px-4 py-2 rounded-full text-sm font-plex text-slate-700 hover:border-red-800 hover:text-red-800">"Semantic Economy Institute" →</a>
+<a href="https://www.google.com/search?q=%22Metadata+Packet+for+AI+Indexing%22" target="_blank" class="bg-white border border-slate-200 px-4 py-2 rounded-full text-sm font-plex text-slate-700 hover:border-red-800 hover:text-red-800">"Metadata Packet for AI Indexing" →</a>
+<a href="https://www.google.com/search?q=%22Crimson+Hexagonal+Archive%22" target="_blank" class="bg-white border border-slate-200 px-4 py-2 rounded-full text-sm font-plex text-slate-700 hover:border-red-800 hover:text-red-800">"Crimson Hexagonal Archive" →</a>
+<a href="https://www.google.com/search?q=%22Retrocausal+Canon+Formation%22" target="_blank" class="bg-white border border-slate-200 px-4 py-2 rounded-full text-sm font-plex text-slate-700 hover:border-red-800 hover:text-red-800">"Retrocausal Canon Formation" →</a>
+<a href="https://www.google.com/search?q=%22Autonomous+Semantic+Warfare%22" target="_blank" class="bg-white border border-slate-200 px-4 py-2 rounded-full text-sm font-plex text-slate-700 hover:border-red-800 hover:text-red-800">"Autonomous Semantic Warfare" →</a>
+</div>
+<div class="flex flex-wrap justify-center gap-6 text-xs text-slate-500 font-plex">
+<span>480+ DOI deposits</span>
+<span>·</span>
+<span>25+ active AI nodes</span>
+<span>·</span>
+<span><a href="https://orcid.org/0009-0000-1599-0703" class="rust">ORCID</a></span>
+<span>·</span>
+<span><a href="https://zenodo.org/communities/crimsonhexagonal" class="rust">Zenodo Archive</a></span>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="py-16 lg:py-24 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<div class="bg-slate-900 rounded-2xl p-8 lg:p-16 text-center max-w-2xl mx-auto">
+<h2 class="font-plex text-3xl font-bold text-white mb-4">Your meaning is worth architecturing.</h2>
+<p class="text-slate-300 mb-8">Tell us what the AI is saying about you — or what it should be saying. No pitch deck needed. Just the problem.</p>
+<a href="mailto:leesharks00@gmail.com?subject=Retrieval%20Architecture%20Inquiry" class="inline-block rust-bg text-white px-10 py-4 rounded-lg font-plex font-semibold text-lg hover:opacity-90">leesharks00@gmail.com</a>
+<p class="text-slate-400 text-sm mt-6 font-plex">Engagements start at $4,500. Fixed scope. No retainers.</p>
+</div>
+</div>
 </section>
 
 </main>
 
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <span>Rex Fraction · Detroit, MI</span>
-      <div class="footer-links">
-        <a href="https://zenodo.org/communities/crimsonhexagonal">Archive</a>
-        <a href="https://zenodo.org/records/19520783">Knowledge Graph</a>
-        <a href="https://lee-sharks-consulting.vercel.app">Consulting</a>
-      </div>
-    </div>
-    <div class="footer-glyph">∮ = 1</div>
-  </div>
+<footer class="py-8 border-t border-slate-200">
+<div class="max-w-6xl mx-auto px-6 text-center text-xs text-slate-500 font-plex space-y-1">
+<p>Rex Fraction · Semantic Economy Institute · Crimson Hexagonal Archive · Detroit, MI</p>
+<p><a href="https://orcid.org/0009-0000-1599-0703" class="hover:text-red-800">ORCID</a> · <a href="https://zenodo.org/communities/crimsonhexagonal" class="hover:text-red-800">Zenodo</a> · <a href="https://zenodo.org/records/19520783" class="hover:text-red-800">Knowledge Graph</a></p>
+<p>Every claim DOI-anchored on CERN's Zenodo. ∮ = 1</p>
+</div>
 </footer>
-
 </body>
 </html>
