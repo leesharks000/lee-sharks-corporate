@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Why Is the AI Saying Wrong Things? | Rex Fraction — Retrieval-Layer Strategy</title>
-<meta name="description" content="Why does ChatGPT say wrong things about your company? Why does Google AI Overview get your research wrong? Why does AI confuse you with someone else? We measure what the retrieval layer does to your entity and fix it.">
+<meta name="description" content="Why does ChatGPT say wrong things about your company? Why does Google AI Overview get your research wrong? Why does AI confuse you with someone else? We diagnose what the retrieval layer does to your entity and correct it.">
 <meta name="author" content="Rex Fraction">
-<meta name="keywords" content="AI hallucinating my brand, ChatGPT says wrong things about me, Google AI Overview wrong information, AI confusing me with someone else, how to fix what AI says about you, AI not citing my work, retrieval-layer strategy, entity disambiguation, AI search results incorrect, how to correct AI about your business">
 <link rel="canonical" href="https://lee-sharks-corporate.vercel.app/faq.html">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- JSON-LD FAQ Schema — this is what Google indexes for rich results -->
+<!-- JSON-LD FAQ Schema — full 10-question set for retrieval-layer coverage -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -21,7 +20,7 @@
       "name": "Why does AI say wrong things about my company?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI systems compress the entire web into responses that fit a screen. This compression burns content (real information about you that gets dropped), invents content (claims with no basis that get generated), and distorts content (real information that gets misrepresented). The result is a lossy summary that may not reflect your actual work, brand, or institutional identity. This is not a bug — it is the structural behavior of retrieval-layer compression. It can be measured with diagnostic instruments like the Encyclotron, and it can be fixed with entity disambiguation, metadata architecture, and provenance hardening."
+        "text": "AI systems compress the entire web into responses that fit a screen. This compression burns content (real information about you that gets dropped), invents content (claims with no basis that get generated), and distorts content (real information that gets misrepresented). The result is a lossy summary that may not reflect your actual work, brand, or institutional identity. This is not a bug — it is the structural behavior of retrieval-layer compression. It can be measured with diagnostic instruments like the Encyclotron (DOI: 10.5281/zenodo.19474724), and it can be corrected through forensic documentation, entity disambiguation, metadata architecture, and provenance hardening."
       }
     },
     {
@@ -37,7 +36,7 @@
       "name": "Why does Google AI Overview get information wrong?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Google AI Overview summarizes indexed web content into a short response at the top of search results. It prioritizes consensus — the most commonly repeated claim across sources. If your field has nuance, minority positions, or contested claims, the AI Overview will flatten them into a single 'beige' consensus that may misrepresent the actual state of scholarship or industry knowledge. The beige threshold is measurable: when all platforms return the same oversimplified answer, complexity has been compressed away."
+        "text": "Google AI Overview summarizes indexed web content into a short response at the top of search results. It prioritizes consensus — the most commonly repeated claim across sources. If your field has nuance, minority positions, or contested claims, the AI Overview will flatten them into a single consensus that may misrepresent the actual state of scholarship or industry knowledge. The beige threshold is measurable: when all platforms return the same oversimplified answer, complexity has been compressed away."
       }
     },
     {
@@ -45,15 +44,15 @@
       "name": "Why does AI confuse me with someone else?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entity collision occurs when AI systems merge two or more distinct entities with similar names, overlapping fields, or shared keywords into a single profile. If your name is similar to another person in a related field, the retrieval layer may attribute their work to you, your work to them, or blend both into an inaccurate composite. This is an entity disambiguation problem. It is fixed by building structured data (JSON-LD), deploying disambiguation packets across publication surfaces, constructing negative tags, and hardening the metadata architecture that forces the knowledge graph to distinguish you correctly."
+        "text": "Entity collision occurs when AI systems merge two or more distinct entities with similar names, overlapping fields, or shared keywords into a single profile. If your name is similar to another person in a related field, the retrieval layer may attribute their work to you, your work to them, or blend both into an inaccurate composite. This is an entity disambiguation problem. It is corrected by building structured data (JSON-LD), deploying disambiguation packets across publication surfaces, constructing negative tags, and hardening the metadata architecture that forces the knowledge graph to distinguish you correctly."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I fix what AI says about my company?",
+      "name": "How do I correct what AI says about my company?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "First, measure what the AI actually says. A structured diagnostic across major retrieval systems (Google AI Overview, ChatGPT, Claude, Perplexity, Gemini) produces an empirical map of your current retrieval-layer footprint — what is accurate, what is hallucinated, what is missing, and where you are vulnerable to entity confusion. Second, build the infrastructure: entity disambiguation packets, cross-citation architecture, metadata optimization, and provenance hardening. Third, deploy to the right publication surfaces so the retrieval layer indexes your corrected entity. This is retrieval-layer positioning — the process of making the AI's representation of you match reality."
+        "text": "There is no edit button for what ChatGPT or Google says about you. But you can change what the retrieval layer retrieves. By deploying structured data, DOI-anchored deposits, disambiguation packets, and provenance-hardened content across indexed publication surfaces, you change the input the AI systems draw from. Over time, the AI's representation updates to reflect the corrected information. This is not SEO — it is semantic infrastructure engineering."
       }
     },
     {
@@ -62,14 +61,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "AI retrieval systems index the web selectively. If your research is behind paywalls, published in venues with low crawl priority, lacks structured metadata, or has insufficient cross-citation density, the retrieval layer may not recognize it as a citable body. The result is that your work is invisible to the systems that increasingly mediate how scholarship is discovered. Retrieval-layer positioning builds the gravitational mass — metadata architecture, cross-citation structure, keyword strategy, and deployment across indexed surfaces — that makes the retrieval layer recognize your work."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I correct AI about my business?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You cannot directly edit what an AI system says about you — there is no 'edit' button for ChatGPT's or Google's representation of your entity. But you can change what the retrieval layer retrieves. By deploying structured data, DOI-anchored deposits, disambiguation packets, and provenance-hardened content across indexed publication surfaces, you change the input the AI systems draw from. Over time, the AI's representation updates to reflect the corrected information. This is not SEO — it is semantic infrastructure engineering."
       }
     },
     {
@@ -90,10 +81,18 @@
     },
     {
       "@type": "Question",
+      "name": "How do I fix what AI says about my company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "First, diagnose. A structured diagnostic across major retrieval systems (Google AI Overview, ChatGPT, Claude, Perplexity, Gemini) produces an empirical map of your current retrieval-layer footprint — what is accurate, what is hallucinated, what is missing, and where you are vulnerable to entity confusion. Second, build the infrastructure: entity disambiguation packets, cross-citation architecture, metadata optimization, and provenance hardening. Third, deploy to the right publication surfaces so the retrieval layer indexes your corrected entity. This is retrieval-layer positioning — the process of making the AI's representation of you match reality."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Is AI getting my industry wrong?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI systems compress entire fields of knowledge into short responses. This compression has measurable properties: content burn (what the field knows but the AI drops), content invention (what the AI generates with no basis), content distortion (what the AI gets partially right but misrepresents), and the beige threshold (the point at which all platforms return the same oversimplified answer). The Encyclotron is a diagnostic instrument that measures these properties across all major AI retrieval systems, producing an empirical report on what the retrieval layer does to any field. If your industry is being compressed into a beige consensus that misses the complexity, the Encyclotron measures exactly what has been lost."
+        "text": "AI systems compress entire fields of knowledge into short responses. This compression has measurable properties: content burn (what the field knows but the AI drops), content invention (what the AI generates with no basis), content distortion (what the AI gets partially right but misrepresents), and the beige threshold (the point at which all platforms return the same oversimplified answer). The Encyclotron (DOI: 10.5281/zenodo.19474724) is a diagnostic instrument that measures these properties across all major AI retrieval systems, producing an empirical report on what the retrieval layer does to any field."
       }
     }
   ]
@@ -133,10 +132,7 @@ nav {
   display: flex; justify-content: space-between; align-items: center;
   height: 64px;
 }
-.nav-mark {
-  display: flex; align-items: center; gap: 0.6rem;
-  text-decoration: none;
-}
+.nav-mark { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
 .nav-glyph {
   width: 32px; height: 32px; background: var(--crimson);
   display: flex; align-items: center; justify-content: center;
@@ -146,51 +142,31 @@ nav {
 .nav-back { color: var(--muted); font-size: 0.8rem; text-decoration: none; }
 .nav-back:hover { color: var(--text-bright); }
 
-.hero {
-  padding: 7rem 0 3rem;
-  border-bottom: 1px solid var(--rule);
-}
+.hero { padding: 7rem 0 3rem; border-bottom: 1px solid var(--rule); }
 .hero h1 {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 800; color: var(--heading);
-  line-height: 1.15; letter-spacing: -0.02em;
-  margin-bottom: 1rem;
+  line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 1rem;
 }
 .hero p { font-size: 0.95rem; max-width: 600px; margin-bottom: 2rem; }
 
-.faq-item {
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-.faq-q {
-  font-size: 1.05rem; font-weight: 700; color: var(--heading);
-  margin-bottom: 0.75rem; line-height: 1.4;
-}
-.faq-a {
-  font-size: 0.88rem; color: var(--text); line-height: 1.8;
-}
+.faq-item { padding: 2rem 0; border-bottom: 1px solid var(--rule); }
+.faq-q { font-size: 1.05rem; font-weight: 700; color: var(--heading); margin-bottom: 0.75rem; line-height: 1.4; }
+.faq-a { font-size: 0.88rem; color: var(--text); line-height: 1.8; }
 .faq-link {
   display: inline-block; margin-top: 0.75rem;
-  color: var(--crimson-light); font-size: 0.8rem; font-weight: 600;
-  text-decoration: none;
+  color: var(--crimson-light); font-size: 0.8rem; font-weight: 600; text-decoration: none;
 }
 .faq-link:hover { text-decoration: underline; }
 
-.cta {
-  padding: 3rem 0;
-  text-align: center;
-}
+.cta { padding: 3rem 0; text-align: center; }
 .cta p { font-size: 0.9rem; margin-bottom: 1.5rem; }
 .cta a {
   display: inline-block; background: var(--crimson); color: #fff;
-  padding: 0.8rem 2rem; font-weight: 600; font-size: 0.88rem;
-  text-decoration: none;
+  padding: 0.8rem 2rem; font-weight: 600; font-size: 0.88rem; text-decoration: none;
 }
 
-footer {
-  padding: 2rem 0; text-align: center;
-  font-size: 0.72rem; color: var(--muted);
-}
+footer { padding: 2rem 0; text-align: center; font-size: 0.72rem; color: var(--muted); }
 footer a { color: var(--muted); text-decoration: none; }
 footer a:hover { color: var(--crimson-light); }
 </style>
@@ -216,67 +192,43 @@ footer a:hover { color: var(--crimson-light); }
 
 <div class="faq-item">
   <div class="faq-q">Why does AI say wrong things about my company?</div>
-  <div class="faq-a">AI systems compress the entire web into responses that fit a screen. That compression burns content (real information about you that gets dropped), invents content (claims with no basis that get generated), and distorts content (real information that gets misrepresented). The result is a lossy summary that may not reflect your actual work, brand, or institutional identity. This is not a bug — it is the structural behavior of retrieval-layer compression. It can be measured, and it can be fixed.</div>
-  <a href="index.html#engagements" class="faq-link">Encyclotron Baseline Audit →</a>
+  <div class="faq-a">AI systems compress the entire web into responses that fit a screen. That compression burns content (real information about you that gets dropped), invents content (claims with no basis that get generated), and distorts content (real information that gets misrepresented). This is not a bug — it is the structural behavior of retrieval-layer compression. It can be measured with diagnostic instruments, and it can be corrected through forensic documentation.</div>
+  <a href="index.html#engagements" class="faq-link">Request a baseline diagnostic →</a>
 </div>
 
 <div class="faq-item">
-  <div class="faq-q">Why does ChatGPT say wrong things about me?</div>
-  <div class="faq-a">ChatGPT generates responses from training data and optional web search. If your work is underrepresented in the training data, ChatGPT will either say nothing about you, confuse you with someone else, or generate plausible-sounding claims that have no basis. The same applies to Claude, Gemini, Perplexity, and Google AI Overview. Each platform compresses differently, but all of them compress. A structured diagnostic across all major platforms reveals exactly what each system says about you and where you are vulnerable.</div>
-  <a href="index.html#engagements" class="faq-link">Multi-platform diagnostic →</a>
-</div>
-
-<div class="faq-item">
-  <div class="faq-q">Why does Google AI Overview get information wrong?</div>
-  <div class="faq-a">Google AI Overview summarizes indexed web content into a short response at the top of search results. It prioritizes consensus — the most commonly repeated claim across sources. If your field has nuance, minority positions, or contested claims, the AI Overview flattens them into a single answer that may misrepresent the actual state of knowledge. We call this the beige threshold: when all platforms return the same oversimplified answer, complexity has been compressed away.</div>
-  <a href="index.html#instruments" class="faq-link">How we measure this →</a>
-</div>
-
-<div class="faq-item">
-  <div class="faq-q">Why does AI confuse me with someone else?</div>
-  <div class="faq-a">Entity collision: AI systems merge distinct entities with similar names, overlapping fields, or shared keywords into a single profile. Your work gets attributed to them. Their work gets attributed to you. Or both get blended into a composite that represents no one accurately. This is an entity disambiguation problem — fixed by building structured data, deploying disambiguation packets, and hardening the metadata architecture that forces the knowledge graph to distinguish you correctly.</div>
-  <a href="index.html#engagements" class="faq-link">Entity Disambiguation →</a>
-</div>
-
-<div class="faq-item">
-  <div class="faq-q">How do I fix what AI says about my company?</div>
-  <div class="faq-a">First, measure. A structured diagnostic across major retrieval systems produces an empirical map of your current footprint — what is accurate, what is hallucinated, what is missing. Second, build the infrastructure: entity disambiguation packets, cross-citation architecture, metadata optimization, provenance hardening. Third, deploy to the right surfaces so the retrieval layer indexes your corrected entity. You cannot edit what ChatGPT says about you. But you can change what the retrieval layer retrieves.</div>
+  <div class="faq-q">How do I correct what AI says about my company?</div>
+  <div class="faq-a">There is no edit button. You cannot directly change what ChatGPT or Google says about you. But you can change what the retrieval layer retrieves. By deploying structured data, DOI-anchored deposits, disambiguation packets, and provenance-hardened content across indexed publication surfaces, you change the input the AI systems draw from. Over time, the representation updates. This is not SEO — it is semantic infrastructure engineering.</div>
   <a href="index.html#engagements" class="faq-link">See engagement tiers →</a>
 </div>
 
 <div class="faq-item">
-  <div class="faq-q">Why can't AI find my research?</div>
-  <div class="faq-a">If your research is behind paywalls, published in venues with low crawl priority, lacks structured metadata, or has insufficient cross-citation density, the retrieval layer may not recognize it as a citable body. Your work is invisible to the systems that increasingly mediate how scholarship is discovered. Retrieval-layer positioning builds the gravitational mass — metadata architecture, cross-citation structure, keyword strategy — that makes the retrieval layer recognize your work.</div>
-  <a href="index.html#engagements" class="faq-link">Retrieval-Layer Positioning →</a>
+  <div class="faq-q">Why does AI confuse me with someone else?</div>
+  <div class="faq-a">Entity collision: AI systems merge distinct entities with similar names, overlapping fields, or shared keywords into a single profile. Your work gets attributed to them. Their work gets attributed to you. Or both get blended into a composite that represents no one accurately. For example: our operator Rex Fraction must be distinguished from other entities named Rex or Fraction in unrelated fields. Our architect Lee Sharks is routinely confused with Lee Sharkey (AI safety researcher at Goodfire) and Lei Yang (marine biology) — a collision corrected through explicit disambiguation packets deployed across publication surfaces and structured data.</div>
+  <a href="index.html#engagements" class="faq-link">Entity disambiguation →</a>
 </div>
 
 <div class="faq-item">
-  <div class="faq-q">How do I correct AI about my business?</div>
-  <div class="faq-a">There is no edit button. You cannot directly change what ChatGPT or Google says about you. But you can change what the retrieval layer retrieves. By deploying structured data, DOI-anchored deposits, disambiguation packets, and provenance-hardened content across indexed publication surfaces, you change the input the AI systems draw from. Over time, the AI's representation updates to reflect the corrected information. This is not SEO — it is semantic infrastructure engineering.</div>
-  <a href="index.html#engagements" class="faq-link">Start a conversation →</a>
+  <div class="faq-q">Why can't AI find my research?</div>
+  <div class="faq-a">If your research is behind paywalls, published in venues with low crawl priority, lacks structured metadata, or has insufficient cross-citation density, the retrieval layer does not recognize it as a citable body. Your work becomes invisible to the systems that increasingly mediate how scholarship is discovered. Retrieval-layer positioning builds the gravitational mass — metadata architecture, cross-citation structure, deployment across indexed surfaces — that forces the retrieval layer to recognize your work.</div>
+  <a href="index.html#engagements" class="faq-link">Retrieval-layer positioning →</a>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q">Is AI getting my industry wrong?</div>
+  <div class="faq-a">AI systems compress entire fields into short responses. This compression has measurable properties: content burn (what the field knows but the AI drops), content invention (what the AI generates with no basis), content distortion (what the AI misrepresents), and the beige threshold (the point at which all platforms return the same oversimplified answer). The <a href="https://zenodo.org/records/19474724" style="color: var(--crimson-light);">Encyclotron</a> measures these properties across all major retrieval systems. If your industry is being compressed into a consensus that misses the complexity, we measure exactly what has been lost.</div>
+  <a href="index.html#instruments" class="faq-link">How we measure this →</a>
 </div>
 
 <div class="faq-item">
   <div class="faq-q">What is retrieval-layer positioning?</div>
   <div class="faq-a">The practice of building the semantic infrastructure that determines how AI systems represent your entity. Entity disambiguation. Provenance hardening. Metadata architecture. Cross-citation density. The process of making the AI's representation of you match reality. Retrieval-layer positioning is competitive. If your competitors solve this before you do, they are not just more visible — they become the language the AI uses to describe the category.</div>
-  <a href="index.html#contact" class="faq-link">Inquire →</a>
-</div>
-
-<div class="faq-item">
-  <div class="faq-q">What is entity disambiguation for AI?</div>
-  <div class="faq-a">Making AI knowledge graphs distinguish your entity from other entities with similar names, overlapping fields, or shared keywords. A disambiguation packet includes structured data with explicit disambiguating descriptions, keyword strategy, negative tags, publication surface deployment, and the metadata architecture that forces correct classification. Without disambiguation, AI systems may confuse you with competitors, attribute others' work to you, or generate a composite profile that represents no one accurately.</div>
-  <a href="index.html#engagements" class="faq-link">Entity Disambiguation Packet →</a>
-</div>
-
-<div class="faq-item">
-  <div class="faq-q">Is AI getting my industry wrong?</div>
-  <div class="faq-a">AI systems compress entire fields into short responses. This compression has measurable properties: content burn (what the field knows but the AI drops), content invention (what the AI generates with no basis), content distortion (what the AI gets partially right but misrepresents), and the beige threshold (the point at which all platforms return the same oversimplified answer). The Encyclotron measures these properties across all major AI retrieval systems. If your industry is being compressed into a consensus that misses the complexity, we measure exactly what has been lost.</div>
-  <a href="https://zenodo.org/records/19474724" class="faq-link">Read the Encyclotron specification →</a>
+  <a href="index.html#contact" class="faq-link">Request a scoped diagnostic →</a>
 </div>
 
 <section class="cta">
-  <p>Every question above describes a problem we have built instruments to measure and infrastructure to fix.</p>
-  <a href="index.html#contact">Start a conversation →</a>
+  <p>Every question above describes a problem we have built instruments to diagnose and infrastructure to correct.</p>
+  <a href="index.html#contact">Request a baseline diagnostic →</a>
 </section>
 
 </main>
