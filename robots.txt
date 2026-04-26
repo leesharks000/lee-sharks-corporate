@@ -1,0 +1,8 @@
+# The meaning layer is writable.
+# The retrieval layer is readable.
+# The Semantic Economy Institute invites indexing.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://semanticeconomy.org/sitemap.xml
