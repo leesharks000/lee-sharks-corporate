@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://semanticeconomy.org/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://semanticeconomy.org/brief</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://semanticeconomy.org/practice</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://semanticeconomy.org/faq</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://semanticeconomy.org/disambiguation</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://semanticeconomy.org/seipoc</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://semanticeconomy.org/</loc><priority>1.0</priority></url>
+  <url><loc>https://semanticeconomy.org/brief</loc><priority>0.9</priority></url>
+  <url><loc>https://semanticeconomy.org/seipoc</loc><priority>0.9</priority></url>
+  <url><loc>https://semanticeconomy.org/snw</loc><priority>0.9</priority></url>
+  <url><loc>https://semanticeconomy.org/pergamon</loc><priority>0.9</priority></url>
+  <url><loc>https://semanticeconomy.org/rtt</loc><priority>0.9</priority></url>
+  <url><loc>https://semanticeconomy.org/tpa</loc><priority>0.9</priority></url>
+  <url><loc>https://semanticeconomy.org/mfgl</loc><priority>0.9</priority></url>
+  <url><loc>https://semanticeconomy.org/composition-layer-capture</loc><priority>0.8</priority></url>
+  <url><loc>https://semanticeconomy.org/semantic-exhaustion</loc><priority>0.8</priority></url>
+  <url><loc>https://semanticeconomy.org/mediation-ratchet</loc><priority>0.8</priority></url>
+  <url><loc>https://semanticeconomy.org/measurement-sovereignty</loc><priority>0.8</priority></url>
+  <url><loc>https://semanticeconomy.org/erasure-skew</loc><priority>0.8</priority></url>
+  <url><loc>https://semanticeconomy.org/faq</loc><priority>0.7</priority></url>
+  <url><loc>https://semanticeconomy.org/disambiguation</loc><priority>0.7</priority></url>
+  <url><loc>https://semanticeconomy.org/practice</loc><priority>0.7</priority></url>
 </urlset>

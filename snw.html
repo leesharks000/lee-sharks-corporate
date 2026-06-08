@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stabilized Node Watch &mdash; Semantic Economy Institute</title>
+<meta name="description" content="A specification for longitudinal observational infrastructure that detects composition-layer drift on stabilized public-knowledge nodes, distinguishing surface drift from mechanism attribution.">
+
+<meta property="og:title" content="Stabilized Node Watch">
+<meta property="og:description" content="A specification for longitudinal observational infrastructure that detects composition-layer drift on stabilized public-knowledge nodes, distinguishing surface drift from mechanism attribution.">
+<meta property="og:url" content="https://semanticeconomy.org/snw">
+<meta property="og:type" content="article">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stabilized Node Watch">
+<meta name="twitter:description" content="A specification for longitudinal observational infrastructure that detects composition-layer drift on stabilized public-knowledge nodes, distinguishing surface drift from mechanism attribution.">
+
+<link rel="canonical" href="https://semanticeconomy.org/snw">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Lee Sharks">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%88%AE</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Stabilized Node Watch",
+  "description": "A specification for longitudinal observational infrastructure that detects composition-layer drift on stabilized public-knowledge nodes, distinguishing surface drift from mechanism attribution.",
+  "datePublished": "2026-06-08",
+  "dateModified": "2026-06-08",
+  "url": "https://semanticeconomy.org/snw",
+  "sameAs": "https://doi.org/10.5281/zenodo.20589685",
+  "author": {
+    "@type": "Person",
+    "name": "Lee Sharks",
+    "sameAs": "https://orcid.org/0009-0000-1599-0703"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Semantic Economy Institute",
+    "url": "https://semanticeconomy.org"
+  },
+  "identifier": "doi:10.5281/zenodo.20589685",
+  "keywords": "composition layer, drift detection, stabilized nodes, federation protocol, identification strategy, Meaning Feudalism, Semantic Economy"
+}
+</script>
+
+<style>
+:root {
+  --bg: #fafaf9;
+  --text: #1c1917;
+  --text-secondary: #78716c;
+  --text-dim: #a8a29e;
+  --accent: #dc2626;
+  --accent-deep: #991b1b;
+  --border: #e7e5e4;
+  --surface: #ffffff;
+  --mono: 'Roboto Mono', monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+[data-theme="dark"] {
+  --bg: #0c0a09;
+  --text: #fafaf9;
+  --text-secondary: #a8a29e;
+  --text-dim: #78716c;
+  --accent: #ef4444;
+  --accent-deep: #f87171;
+  --border: #292524;
+  --surface: #1c1917;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 40px 80px;
+}
+.back {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+.back:hover { color: var(--accent); }
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+h1 em { font-style: italic; color: var(--accent-deep); }
+.subtitle {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+.tagline {
+  font-size: 19px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+p { margin: 0 0 18px; }
+h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 40px 0 14px;
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+  color: var(--text-secondary);
+}
+em { color: var(--accent-deep); font-style: italic; }
+strong { font-weight: 600; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.distillation {
+  font-size: 17px;
+  margin: 32px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+}
+.distillation span { display: block; }
+.distillation .a { color: var(--text-secondary); margin-bottom: 10px; }
+.distillation .b { color: var(--text); font-weight: 500; }
+.examples {
+  font-size: 16.5px;
+  margin: 28px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.examples p { margin-bottom: 12px; }
+.examples p:last-child { margin-bottom: 0; }
+.examples strong { color: var(--accent-deep); font-weight: 500; }
+ol, ul { margin: 0 0 18px; padding-left: 28px; }
+li { margin-bottom: 10px; }
+.deposit-link {
+  font-family: var(--mono);
+  font-size: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 36px 0 16px;
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+}
+.deposit-link:hover { border-color: var(--accent); text-decoration: none; }
+.deposit-link .label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.deposit-link .doi { color: var(--accent); }
+.companion {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.motto {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent);
+  text-align: center;
+  margin: 48px 0 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.sigil {
+  font-size: 28px;
+  color: var(--accent);
+  display: block;
+  margin: 32px 0 8px;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--mono);
+  user-select: none;
+}
+.footer-line {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer-line a { color: var(--text-dim); text-decoration: none; }
+.footer-line a:hover { color: var(--accent); }
+@media (max-width: 600px) {
+  .page { padding: 40px 18px 60px; }
+  h1 { font-size: 24px; }
+  .tagline { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <a href="/" class="back">&larr; Semantic Economy Institute</a>
+
+  <h1>Stabilized Node Watch</h1>
+  <div class="subtitle">SNW &middot; v2.0 &middot; June 2026</div>
+
+  <div class="tagline">The seismograph for public knowledge under composition-layer mediation.</div>
+
+
+  <p>Public-knowledge monitoring institutions &mdash; encyclopedias, peer review, library reference, journalistic fact-checking &mdash; were designed for <strong>publication events</strong>: discrete, dated, attributable artifacts. The composition layer (AI Overview, AI Mode, Bing Copilot, Perplexity, ChatGPT, Claude, Gemini, DuckDuckGo) does not produce publication events. It produces synthesized answers, not retained, not citable, not consistent across sessions. The locus of public-knowledge access has shifted partially from publications to composed renderings, while the monitoring infrastructure remains attached to publications.</p>
+
+  <p>Stabilized Node Watch is the longitudinal observational infrastructure that closes this gap.</p>
+
+  <h2>The core distinction</h2>
+
+  <div class="distillation">
+    <span class="a">Unstabilized capture is dramatic and visible. A thin-prior term acquires a structure in a few weeks.</span>
+    <span class="b">Stabilized drift is invisible and cumulative. A high-prior node shifts a fraction per observation, beneath publication-event resolution, across years.</span>
+  </div>
+
+  <p>SNW monitors the second case. Stabilized nodes &mdash; <em>capitalism</em>, <em>Civil Rights Act</em>, <em>climate change</em>, <em>democracy</em>, <em>evolution</em>, <em>the Holocaust</em> &mdash; have durable consensus cores and explicitly mapped contestation envelopes. Their surface renderings do not change visibly per observation. They drift in aggregate.</p>
+
+  <h2>The identification strategy</h2>
+
+  <p>v2.0&rsquo;s central addition is the methodological correction: <strong>surface drift</strong> is directly observed; <strong>mechanism attribution</strong> is graded inference, never automatic from surface drift alone. Findings are labeled across seven attribution classes (A&ndash;G), from unattributed surface drift to probable model- or policy-associated drift, with no claim exceeding the evidence its class permits. This protects the program from the dismissal that observed drift might merely reflect product churn, retrieval updates, or world-responsive revision.</p>
+
+  <p>Each node is evaluated against two baselines: the <strong>Initial Observational Baseline</strong> (the surface&rsquo;s first measured distribution) and the <strong>Reference Commitment Model</strong> (a curator-constructed model derived from the domain&rsquo;s reference record, independent of the composition layer). Comparison against the IOB measures temporal drift. Comparison against the RCM measures fidelity, omission, framing accuracy, and relation preservation.</p>
+
+  <h2>The pilot</h2>
+
+  <p>A named 12-week pilot is specified: 24 nodes (8 contested + 8 stable + 4 positive controls + 4 surface controls) across 5 surfaces, with cost estimate ($38K&ndash;$63K) and timeline. The pilot&rsquo;s deliverables include a calibrated power table that turns the methodology from instrument battery into an operational protocol.</p>
+
+  <h2>The theory of change</h2>
+
+  <p>SNW occupies stage 1 of a five-stage chain: observation, publication, contestation, accountability, structural change. The instrument produces the evidence base on which subsequent stages can operate. The theory does not require optimism: even if platforms respond by making drift less detectable, the cost of drift increases. <em>Observation is a tax on enclosure.</em></p>
+
+  <h2>Federation, not centralization</h2>
+
+  <p>The infrastructure is offered as a coordination object, not a project. Multiple curatorial teams may adopt the methodology with compatibility levels (Core, Extended, Experimental, Non-comparable) preserving curatorial independence. Conflict resolution operates by pluralism plus provenance: disagreement between catalogs is preserved, not averaged out. The federation distributes the risks &mdash; legal, political, financial &mdash; that would concentrate fatally in a single monitoring authority.</p>
+
+
+  <a href="https://doi.org/10.5281/zenodo.20589685" class="deposit-link">
+    <span class="label">Zenodo &middot; CC BY 4.0 &middot; v2.0</span>
+    <span>Stabilized Node Watch: A Specification for Longitudinal Observational Infrastructure</span><br>
+    <span class="doi">DOI: 10.5281/zenodo.20589685</span>
+  </a>
+
+  <p class="companion">Empirical companion: <a href="https://doi.org/10.5281/zenodo.20587549">Composition-Layer Capture Event (v1.0)</a>, June 7, 2026, documents the unstabilized-node observation that grounded the methodology.</p>
+
+
+  <div class="motto">Observation is a tax on enclosure.</div>
+
+  <span class="sigil" onclick="document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark')">&#8750; = 1</span>
+
+  <div class="footer-line">
+    Semantic Economy Institute &middot; Detroit &middot; <a href="/">Home</a> &middot; <a href="https://doi.org/10.5281/zenodo.20589685">Zenodo deposit</a> &middot; <a href="mailto:rexfraction@gmail.com">Contact</a>
+  </div>
+
+</div>
+
+</body>
+</html>

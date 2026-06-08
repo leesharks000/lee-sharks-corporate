@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erasure Skew &mdash; Semantic Economy Institute</title>
+<meta name="description" content="A measurement program for the power-conditioning of provenance retention. Provenance erasure is not demographic; it is power-conditioned.">
+
+<meta property="og:title" content="Erasure Skew">
+<meta property="og:description" content="A measurement program for the power-conditioning of provenance retention. Provenance erasure is not demographic; it is power-conditioned.">
+<meta property="og:url" content="https://semanticeconomy.org/erasure-skew">
+<meta property="og:type" content="article">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Erasure Skew">
+<meta name="twitter:description" content="A measurement program for the power-conditioning of provenance retention. Provenance erasure is not demographic; it is power-conditioned.">
+
+<link rel="canonical" href="https://semanticeconomy.org/erasure-skew">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Lee Sharks">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%88%AE</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Erasure Skew",
+  "description": "A measurement program for the power-conditioning of provenance retention. Provenance erasure is not demographic; it is power-conditioned.",
+  "datePublished": "2026-06-04",
+  "dateModified": "2026-06-04",
+  "url": "https://semanticeconomy.org/erasure-skew",
+  "sameAs": "https://doi.org/10.5281/zenodo.20558196",
+  "author": {
+    "@type": "Person",
+    "name": "Lee Sharks",
+    "sameAs": "https://orcid.org/0009-0000-1599-0703"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Semantic Economy Institute",
+    "url": "https://semanticeconomy.org"
+  },
+  "identifier": "doi:10.5281/zenodo.20558196",
+  "keywords": "erasure skew, provenance erasure, power conditioning, Omega measurement, attribution, Semantic Economy"
+}
+</script>
+
+<style>
+:root {
+  --bg: #fafaf9;
+  --text: #1c1917;
+  --text-secondary: #78716c;
+  --text-dim: #a8a29e;
+  --accent: #dc2626;
+  --accent-deep: #991b1b;
+  --border: #e7e5e4;
+  --surface: #ffffff;
+  --mono: 'Roboto Mono', monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+[data-theme="dark"] {
+  --bg: #0c0a09;
+  --text: #fafaf9;
+  --text-secondary: #a8a29e;
+  --text-dim: #78716c;
+  --accent: #ef4444;
+  --accent-deep: #f87171;
+  --border: #292524;
+  --surface: #1c1917;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 40px 80px;
+}
+.back {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+.back:hover { color: var(--accent); }
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+h1 em { font-style: italic; color: var(--accent-deep); }
+.subtitle {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+.tagline {
+  font-size: 19px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+p { margin: 0 0 18px; }
+h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 40px 0 14px;
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+  color: var(--text-secondary);
+}
+em { color: var(--accent-deep); font-style: italic; }
+strong { font-weight: 600; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.distillation {
+  font-size: 17px;
+  margin: 32px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+}
+.distillation span { display: block; }
+.distillation .a { color: var(--text-secondary); margin-bottom: 10px; }
+.distillation .b { color: var(--text); font-weight: 500; }
+.examples {
+  font-size: 16.5px;
+  margin: 28px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.examples p { margin-bottom: 12px; }
+.examples p:last-child { margin-bottom: 0; }
+.examples strong { color: var(--accent-deep); font-weight: 500; }
+ol, ul { margin: 0 0 18px; padding-left: 28px; }
+li { margin-bottom: 10px; }
+.deposit-link {
+  font-family: var(--mono);
+  font-size: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 36px 0 16px;
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+}
+.deposit-link:hover { border-color: var(--accent); text-decoration: none; }
+.deposit-link .label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.deposit-link .doi { color: var(--accent); }
+.companion {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.motto {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent);
+  text-align: center;
+  margin: 48px 0 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.sigil {
+  font-size: 28px;
+  color: var(--accent);
+  display: block;
+  margin: 32px 0 8px;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--mono);
+  user-select: none;
+}
+.footer-line {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer-line a { color: var(--text-dim); text-decoration: none; }
+.footer-line a:hover { color: var(--accent); }
+@media (max-width: 600px) {
+  .page { padding: 40px 18px 60px; }
+  h1 { font-size: 24px; }
+  .tagline { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <a href="/" class="back">&larr; Semantic Economy Institute</a>
+
+  <h1>Erasure <em>Skew</em></h1>
+  <div class="subtitle">&Omega; &middot; v3 &middot; June 2026</div>
+
+  <div class="tagline">Erasure skew is not demographic. It is power-conditioned.</div>
+
+
+  <p>Provenance Erasure Rate (PER) measures the fraction of attribution removed when content moves across institutional surfaces. The PER measurement raises a structural question: when erasure is not uniform across producers, what conditions the skew?</p>
+
+  <p>One natural hypothesis is that erasure tracks demographic categories of the producer &mdash; that authors from underrepresented groups face higher erasure rates. The Erasure Skew (&Omega;) measurement program tests this hypothesis empirically and reaches a sharper structural finding: <strong>erasure skew is power-conditioned, not demographic.</strong></p>
+
+  <h2>The finding</h2>
+
+  <div class="distillation">
+    <span class="a">Erasure does not skew by who you are.</span>
+    <span class="b">Erasure skews by what institutional infrastructure you have to defend attribution.</span>
+  </div>
+
+  <p>Producers with strong institutional positioning &mdash; affiliated researchers, prominent journalists, established commentators &mdash; experience low erasure rates regardless of their demographic identification. Producers without strong institutional positioning experience high erasure rates regardless of their identification. The variable is institutional positioning, and institutional positioning is power-conditioned.</p>
+
+  <h2>The classifier correction</h2>
+
+  <p>The v3 deposit includes the MPAI classifier correction (<a href="https://doi.org/10.5281/zenodo.20518342">DOI 10.5281/zenodo.20518342</a>) that specifies how downstream classifiers using the &Omega; coefficient should interpret the measurement: the variable to attribute is structural position, not demographic category. Classifiers that read &Omega; through a demographic frame produce predictions that misallocate the underlying mechanism and consequently misdirect the institutional responses they recommend.</p>
+
+  <h2>Why this matters</h2>
+
+  <p>The structural finding has direct consequences for accountability architecture. Anti-erasure interventions that focus on demographic targeting will miss most of the actual erasure mechanism, because most erasure operates on producers whose demographic categorization the targeting does not address. Anti-erasure interventions that focus on institutional positioning &mdash; on providing the structural defenses that powerful producers already have &mdash; address the actual mechanism.</p>
+
+  <p>The corpus&rsquo;s own infrastructure (DOI anchoring, SPXI distributed provenance, ORCID inscription, cross-deposit linking) is one such structural defense. It is available, in principle, to any producer who can navigate it. The structural problem is that the defense&rsquo;s availability is itself power-conditioned: those who already have institutional positioning find it easier to deploy, and those who do not find it harder. The work of the Semantic Economy series includes making the defense more accessible to producers who do not already have institutional positioning available to deploy.</p>
+
+
+  <a href="https://doi.org/10.5281/zenodo.20558196" class="deposit-link">
+    <span class="label">Zenodo &middot; CC BY 4.0 &middot; v3</span>
+    <span>Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Retention</span><br>
+    <span class="doi">DOI: 10.5281/zenodo.20558196</span>
+  </a>
+
+  <p class="companion">Companion deposit: <a href="https://doi.org/10.5281/zenodo.20558672">Provenance Erasure Rate Under the Atomic Token Rule</a>, the technical hardening of PER v1 that grounds the Erasure Skew measurement.</p>
+
+
+  <div class="motto">The pattern is not who you are. The pattern is what you control.</div>
+
+  <span class="sigil" onclick="document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark')">&#8750; = 1</span>
+
+  <div class="footer-line">
+    Semantic Economy Institute &middot; Detroit &middot; <a href="/">Home</a> &middot; <a href="https://doi.org/10.5281/zenodo.20558196">Zenodo deposit</a> &middot; <a href="mailto:rexfraction@gmail.com">Contact</a>
+  </div>
+
+</div>
+
+</body>
+</html>

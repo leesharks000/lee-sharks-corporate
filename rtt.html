@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Reverse Turing Test &mdash; Semantic Economy Institute</title>
+<meta name="description" content="A three-stage protocol for detecting AI-mediation signatures in human text and their propagation into model training, using tail-focused statistical instruments.">
+
+<meta property="og:title" content="The Reverse Turing Test">
+<meta property="og:description" content="A three-stage protocol for detecting AI-mediation signatures in human text and their propagation into model training, using tail-focused statistical instruments.">
+<meta property="og:url" content="https://semanticeconomy.org/rtt">
+<meta property="og:type" content="article">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Reverse Turing Test">
+<meta name="twitter:description" content="A three-stage protocol for detecting AI-mediation signatures in human text and their propagation into model training, using tail-focused statistical instruments.">
+
+<link rel="canonical" href="https://semanticeconomy.org/rtt">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Lee Sharks">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%88%AE</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "The Reverse Turing Test",
+  "description": "A three-stage protocol for detecting AI-mediation signatures in human text and their propagation into model training, using tail-focused statistical instruments.",
+  "datePublished": "2026-06-07",
+  "dateModified": "2026-06-07",
+  "url": "https://semanticeconomy.org/rtt",
+  "sameAs": "https://doi.org/10.5281/zenodo.20586932",
+  "author": {
+    "@type": "Person",
+    "name": "Lee Sharks",
+    "sameAs": "https://orcid.org/0009-0000-1599-0703"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Semantic Economy Institute",
+    "url": "https://semanticeconomy.org"
+  },
+  "identifier": "doi:10.5281/zenodo.20586932",
+  "keywords": "Reverse Turing Test, cognitive-rate drift, tail thinning, AI habituation, semantic exhaustion, Meaning Feudalism, statistical instruments"
+}
+</script>
+
+<style>
+:root {
+  --bg: #fafaf9;
+  --text: #1c1917;
+  --text-secondary: #78716c;
+  --text-dim: #a8a29e;
+  --accent: #dc2626;
+  --accent-deep: #991b1b;
+  --border: #e7e5e4;
+  --surface: #ffffff;
+  --mono: 'Roboto Mono', monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+[data-theme="dark"] {
+  --bg: #0c0a09;
+  --text: #fafaf9;
+  --text-secondary: #a8a29e;
+  --text-dim: #78716c;
+  --accent: #ef4444;
+  --accent-deep: #f87171;
+  --border: #292524;
+  --surface: #1c1917;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 40px 80px;
+}
+.back {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+.back:hover { color: var(--accent); }
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+h1 em { font-style: italic; color: var(--accent-deep); }
+.subtitle {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+.tagline {
+  font-size: 19px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+p { margin: 0 0 18px; }
+h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 40px 0 14px;
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+  color: var(--text-secondary);
+}
+em { color: var(--accent-deep); font-style: italic; }
+strong { font-weight: 600; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.distillation {
+  font-size: 17px;
+  margin: 32px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+}
+.distillation span { display: block; }
+.distillation .a { color: var(--text-secondary); margin-bottom: 10px; }
+.distillation .b { color: var(--text); font-weight: 500; }
+.examples {
+  font-size: 16.5px;
+  margin: 28px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.examples p { margin-bottom: 12px; }
+.examples p:last-child { margin-bottom: 0; }
+.examples strong { color: var(--accent-deep); font-weight: 500; }
+ol, ul { margin: 0 0 18px; padding-left: 28px; }
+li { margin-bottom: 10px; }
+.deposit-link {
+  font-family: var(--mono);
+  font-size: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 36px 0 16px;
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+}
+.deposit-link:hover { border-color: var(--accent); text-decoration: none; }
+.deposit-link .label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.deposit-link .doi { color: var(--accent); }
+.companion {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.motto {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent);
+  text-align: center;
+  margin: 48px 0 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.sigil {
+  font-size: 28px;
+  color: var(--accent);
+  display: block;
+  margin: 32px 0 8px;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--mono);
+  user-select: none;
+}
+.footer-line {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer-line a { color: var(--text-dim); text-decoration: none; }
+.footer-line a:hover { color: var(--accent); }
+@media (max-width: 600px) {
+  .page { padding: 40px 18px 60px; }
+  h1 { font-size: 24px; }
+  .tagline { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <a href="/" class="back">&larr; Semantic Economy Institute</a>
+
+  <h1>The Reverse <em>Turing Test</em></h1>
+  <div class="subtitle">RTT &middot; v1.2 &middot; June 2026</div>
+
+  <div class="tagline">Not <em>can the machine pass for human</em>, but <em>has the human writing thinned toward the machine&rsquo;s centroid.</em></div>
+
+
+  <p>The classical Turing Test asks whether the machine&rsquo;s output is indistinguishable from the human&rsquo;s. The empirical situation has inverted. The salient question is no longer whether the machine can imitate the human. The salient question is whether the human, after sustained AI mediation, can be distinguished from the machine &mdash; or whether the human&rsquo;s text has thinned toward the machine&rsquo;s distributional centroid.</p>
+
+  <h2>The cognitive-rate hypothesis</h2>
+
+  <p>The Reverse Turing Test (RTT) proposes that <strong>sustained AI mediation of human writing produces a measurable thinning of the distributional tails of human text</strong>. Specifically: the rare, idiosyncratic, low-prior productions that distinguished pre-AI human writing become less frequent. The mean stays similar. The tails contract. The text becomes more concentrated around the centroid of what AI systems produce.</p>
+
+  <p>This thinning is not a stylistic claim. It is a distributional claim, measurable by standard statistical instruments &mdash; Kolmogorov-Smirnov tests, kurtosis comparisons, quantile regression, Levene&rsquo;s test &mdash; applied to vocabulary, syntactic-structure, framing, and proposition-level features of the corpus over time.</p>
+
+  <h2>The three stages</h2>
+
+  <ol>
+    <li><strong>Stage I &mdash; Baseline.</strong> Pre-AI-adoption writing samples from a subject or community establish the distribution of tail content: rare phrasings, idiosyncratic framings, low-prior propositions.</li>
+    <li><strong>Stage II &mdash; Habituation.</strong> Subject writing during sustained AI-assisted composition. Tail content is compared against baseline. Thinning, if present, is quantified.</li>
+    <li><strong>Stage III &mdash; Propagation.</strong> The habituated corpus enters the broader text record (publication, internet posting, scraping). The thinned text becomes training data for future models. The model&rsquo;s subsequent output is measured against pre-thinning baselines. If propagation is real, model output should drift toward the thinned distribution.</li>
+  </ol>
+
+  <h2>Why tail-focused</h2>
+
+  <p>Mean-focused metrics miss the phenomenon. Two distributions can share a mean while having radically different kurtosis. A corpus whose central tendency is unchanged but whose tails have thinned has lost <em>variance</em>, not <em>average meaning</em>. The political-economic stakes operate at the tail: the rare, the specific, the irreproducible. The compression of variance is the compression of what is not already in the system&rsquo;s prior.</p>
+
+  <h2>Relation to Stabilized Node Watch</h2>
+
+  <p>The RTT measures cognitive-rate drift at the human substrate. <a href="/snw">SNW</a> measures surface drift at the composition layer. Consistent findings of tail thinning at both layers &mdash; the human substrate and the rendering surface &mdash; would constitute strong evidence for the <a href="/mfgl">Meaning Feudalism</a> framework&rsquo;s central predictive claim: that both layers are subject to the same enclosure pressure.</p>
+
+
+  <a href="https://doi.org/10.5281/zenodo.20586932" class="deposit-link">
+    <span class="label">Zenodo &middot; CC BY 4.0 &middot; v1.2</span>
+    <span>The Reverse Turing Test: A Three-Stage Protocol for Detecting AI-Mediation Signatures in Human Text</span><br>
+    <span class="doi">DOI: 10.5281/zenodo.20586932</span>
+  </a>
+
+  <p class="companion">Design counterpart: <a href="/tpa">The Tail-Preserving Alternative</a> (v1.0) specifies what variance-preserving model deployment would require &mdash; the design that the existing political economy of model deployment does not permit.</p>
+
+
+  <div class="motto">The tail is the corpus.</div>
+
+  <span class="sigil" onclick="document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark')">&#8750; = 1</span>
+
+  <div class="footer-line">
+    Semantic Economy Institute &middot; Detroit &middot; <a href="/">Home</a> &middot; <a href="https://doi.org/10.5281/zenodo.20586932">Zenodo deposit</a> &middot; <a href="mailto:rexfraction@gmail.com">Contact</a>
+  </div>
+
+</div>
+
+</body>
+</html>

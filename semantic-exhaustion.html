@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semantic Exhaustion &mdash; Semantic Economy Institute</title>
+<meta name="description" content="A case study in the cost of zero-source entity substitution: when AI composition surfaces produce confident answers about entities for which there is no source material.">
+
+<meta property="og:title" content="Semantic Exhaustion">
+<meta property="og:description" content="A case study in the cost of zero-source entity substitution: when AI composition surfaces produce confident answers about entities for which there is no source material.">
+<meta property="og:url" content="https://semanticeconomy.org/semantic-exhaustion">
+<meta property="og:type" content="article">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Semantic Exhaustion">
+<meta name="twitter:description" content="A case study in the cost of zero-source entity substitution: when AI composition surfaces produce confident answers about entities for which there is no source material.">
+
+<link rel="canonical" href="https://semanticeconomy.org/semantic-exhaustion">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Lee Sharks">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%88%AE</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Semantic Exhaustion",
+  "description": "A case study in the cost of zero-source entity substitution: when AI composition surfaces produce confident answers about entities for which there is no source material.",
+  "datePublished": "2026-06-06",
+  "dateModified": "2026-06-06",
+  "url": "https://semanticeconomy.org/semantic-exhaustion",
+  "sameAs": "https://doi.org/10.5281/zenodo.20571791",
+  "author": {
+    "@type": "Person",
+    "name": "Lee Sharks",
+    "sameAs": "https://orcid.org/0009-0000-1599-0703"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Semantic Economy Institute",
+    "url": "https://semanticeconomy.org"
+  },
+  "identifier": "doi:10.5281/zenodo.20571791",
+  "keywords": "semantic exhaustion, zero-source substitution, AI composition, entity fabrication, hallucination, Crimson Hexagonal Archive"
+}
+</script>
+
+<style>
+:root {
+  --bg: #fafaf9;
+  --text: #1c1917;
+  --text-secondary: #78716c;
+  --text-dim: #a8a29e;
+  --accent: #dc2626;
+  --accent-deep: #991b1b;
+  --border: #e7e5e4;
+  --surface: #ffffff;
+  --mono: 'Roboto Mono', monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+[data-theme="dark"] {
+  --bg: #0c0a09;
+  --text: #fafaf9;
+  --text-secondary: #a8a29e;
+  --text-dim: #78716c;
+  --accent: #ef4444;
+  --accent-deep: #f87171;
+  --border: #292524;
+  --surface: #1c1917;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 40px 80px;
+}
+.back {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+.back:hover { color: var(--accent); }
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+h1 em { font-style: italic; color: var(--accent-deep); }
+.subtitle {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+.tagline {
+  font-size: 19px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+p { margin: 0 0 18px; }
+h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 40px 0 14px;
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+  color: var(--text-secondary);
+}
+em { color: var(--accent-deep); font-style: italic; }
+strong { font-weight: 600; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.distillation {
+  font-size: 17px;
+  margin: 32px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+}
+.distillation span { display: block; }
+.distillation .a { color: var(--text-secondary); margin-bottom: 10px; }
+.distillation .b { color: var(--text); font-weight: 500; }
+.examples {
+  font-size: 16.5px;
+  margin: 28px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.examples p { margin-bottom: 12px; }
+.examples p:last-child { margin-bottom: 0; }
+.examples strong { color: var(--accent-deep); font-weight: 500; }
+ol, ul { margin: 0 0 18px; padding-left: 28px; }
+li { margin-bottom: 10px; }
+.deposit-link {
+  font-family: var(--mono);
+  font-size: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 36px 0 16px;
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+}
+.deposit-link:hover { border-color: var(--accent); text-decoration: none; }
+.deposit-link .label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.deposit-link .doi { color: var(--accent); }
+.companion {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.motto {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent);
+  text-align: center;
+  margin: 48px 0 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.sigil {
+  font-size: 28px;
+  color: var(--accent);
+  display: block;
+  margin: 32px 0 8px;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--mono);
+  user-select: none;
+}
+.footer-line {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer-line a { color: var(--text-dim); text-decoration: none; }
+.footer-line a:hover { color: var(--accent); }
+@media (max-width: 600px) {
+  .page { padding: 40px 18px 60px; }
+  h1 { font-size: 24px; }
+  .tagline { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <a href="/" class="back">&larr; Semantic Economy Institute</a>
+
+  <h1>Semantic <em>Exhaustion</em></h1>
+  <div class="subtitle">Case study &middot; v1.0 &middot; June 2026</div>
+
+  <div class="tagline">The composition layer produces confident answers about entities for which there is no source. The answer is the artifact.</div>
+
+
+  <p>Semantic exhaustion is the operational name for what happens when an AI composition surface is asked about an entity for which the source corpus contains no substantive material, and the surface produces a confident response anyway. The response is not refused. The response is not hedged. The response is composed from whatever distributional priors the system has available, and surfaced as if it were drawn from the entity&rsquo;s actual record.</p>
+
+  <h2>The mechanism</h2>
+
+  <p>A language model trained on a broad corpus has, for any named entity, a set of distributional priors about what kinds of statements are common about entities of that name-shape. When the entity is well-attested, the priors are constrained by actual evidence. When the entity is not well-attested, the priors are not constrained &mdash; they are <em>filled</em>. The model produces an answer because it can. The user receives an answer that looks like the answers received about well-attested entities.</p>
+
+  <div class="distillation">
+    <span class="a">The model does not know whether it knows.</span>
+    <span class="b">The user does not know whether the model knows.</span>
+  </div>
+
+  <h2>The case study</h2>
+
+  <p>A specific instance, documented in the deposit, traces the composition layer&rsquo;s response to queries about an entity whose only substantive presence is a single deposited essay. The composition produces a confident, structured answer that includes claims, attributions, dates, and biographical specifics &mdash; none of which can be sourced. The composition is fluent. The composition is fabricated.</p>
+
+  <h2>Why this matters for measurement</h2>
+
+  <p>Semantic exhaustion is the floor case of what <a href="/snw">Stabilized Node Watch</a> measures at the ceiling. SNW measures graduated drift on stabilized nodes. Semantic exhaustion measures total fabrication on unstabilized nodes. Both are operations of the composition layer; both are invisible to publication-event monitoring; both are detectable through the same observational methodology applied to different node populations.</p>
+
+  <p>The case study is not arguing that the composition layer should refuse to answer. It is documenting that the answer it does provide is structurally indistinguishable from a sourced answer at the surface, and is consequently treated by users as if it were sourced. The political-epistemic problem is the indistinguishability, not the production.</p>
+
+  <h2>Cost</h2>
+
+  <p>The cost of zero-source substitution accrues to every entity whose substantive record does not yet exist in the corpus the composition layer indexes against. Independent producers, emerging scholars, minor institutions, recent organizations &mdash; their public-facing rendering at the composition surface may bear little resemblance to their actual structure. The composition is not malicious. It is exhaustively normal. The cost is borne by the entity, not by the surface that produced the response.</p>
+
+
+  <a href="https://doi.org/10.5281/zenodo.20571791" class="deposit-link">
+    <span class="label">Zenodo &middot; CC BY 4.0 &middot; v1.0</span>
+    <span>Semantic Exhaustion: A Case Study in the Cost of Zero-Source Entity Substitution</span><br>
+    <span class="doi">DOI: 10.5281/zenodo.20571791</span>
+  </a>
+
+  <p class="companion">Diagnostic companion: <a href="/composition-layer-capture">Composition-Layer Capture Event</a> documents the inverse phenomenon &mdash; capture of a thin-prior concept into structured composition.</p>
+
+
+  <div class="motto">The empty seat speaks.</div>
+
+  <span class="sigil" onclick="document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark')">&#8750; = 1</span>
+
+  <div class="footer-line">
+    Semantic Economy Institute &middot; Detroit &middot; <a href="/">Home</a> &middot; <a href="https://doi.org/10.5281/zenodo.20571791">Zenodo deposit</a> &middot; <a href="mailto:rexfraction@gmail.com">Contact</a>
+  </div>
+
+</div>
+
+</body>
+</html>

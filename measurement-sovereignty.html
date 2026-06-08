@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Measurement Sovereignty &mdash; Semantic Economy Institute</title>
+<meta name="description" content="The Audit-Performance Bifurcation Operator (B) and the legibility problem: who decides which institutional outputs are subject to public measurement, and who decides what counts as adequate measurement.">
+
+<meta property="og:title" content="Measurement Sovereignty">
+<meta property="og:description" content="The Audit-Performance Bifurcation Operator (B) and the legibility problem: who decides which institutional outputs are subject to public measurement, and who decides what counts as adequate measurement.">
+<meta property="og:url" content="https://semanticeconomy.org/measurement-sovereignty">
+<meta property="og:type" content="article">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Measurement Sovereignty">
+<meta name="twitter:description" content="The Audit-Performance Bifurcation Operator (B) and the legibility problem: who decides which institutional outputs are subject to public measurement, and who decides what counts as adequate measurement.">
+
+<link rel="canonical" href="https://semanticeconomy.org/measurement-sovereignty">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Lee Sharks">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%88%AE</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Measurement Sovereignty",
+  "description": "The Audit-Performance Bifurcation Operator (B) and the legibility problem: who decides which institutional outputs are subject to public measurement, and who decides what counts as adequate measurement.",
+  "datePublished": "2026-06-04",
+  "dateModified": "2026-06-04",
+  "url": "https://semanticeconomy.org/measurement-sovereignty",
+  "sameAs": "https://doi.org/10.5281/zenodo.20558784",
+  "author": {
+    "@type": "Person",
+    "name": "Lee Sharks",
+    "sameAs": "https://orcid.org/0009-0000-1599-0703"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Semantic Economy Institute",
+    "url": "https://semanticeconomy.org"
+  },
+  "identifier": "doi:10.5281/zenodo.20558784",
+  "keywords": "measurement sovereignty, audit-performance bifurcation, B operator, legibility, institutional accountability, Semantic Economy"
+}
+</script>
+
+<style>
+:root {
+  --bg: #fafaf9;
+  --text: #1c1917;
+  --text-secondary: #78716c;
+  --text-dim: #a8a29e;
+  --accent: #dc2626;
+  --accent-deep: #991b1b;
+  --border: #e7e5e4;
+  --surface: #ffffff;
+  --mono: 'Roboto Mono', monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+[data-theme="dark"] {
+  --bg: #0c0a09;
+  --text: #fafaf9;
+  --text-secondary: #a8a29e;
+  --text-dim: #78716c;
+  --accent: #ef4444;
+  --accent-deep: #f87171;
+  --border: #292524;
+  --surface: #1c1917;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 40px 80px;
+}
+.back {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+.back:hover { color: var(--accent); }
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+h1 em { font-style: italic; color: var(--accent-deep); }
+.subtitle {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+.tagline {
+  font-size: 19px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+p { margin: 0 0 18px; }
+h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 40px 0 14px;
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+  color: var(--text-secondary);
+}
+em { color: var(--accent-deep); font-style: italic; }
+strong { font-weight: 600; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.distillation {
+  font-size: 17px;
+  margin: 32px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+}
+.distillation span { display: block; }
+.distillation .a { color: var(--text-secondary); margin-bottom: 10px; }
+.distillation .b { color: var(--text); font-weight: 500; }
+.examples {
+  font-size: 16.5px;
+  margin: 28px 0;
+  padding: 22px 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.examples p { margin-bottom: 12px; }
+.examples p:last-child { margin-bottom: 0; }
+.examples strong { color: var(--accent-deep); font-weight: 500; }
+ol, ul { margin: 0 0 18px; padding-left: 28px; }
+li { margin-bottom: 10px; }
+.deposit-link {
+  font-family: var(--mono);
+  font-size: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 36px 0 16px;
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+}
+.deposit-link:hover { border-color: var(--accent); text-decoration: none; }
+.deposit-link .label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.deposit-link .doi { color: var(--accent); }
+.companion {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.motto {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent);
+  text-align: center;
+  margin: 48px 0 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.sigil {
+  font-size: 28px;
+  color: var(--accent);
+  display: block;
+  margin: 32px 0 8px;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--mono);
+  user-select: none;
+}
+.footer-line {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer-line a { color: var(--text-dim); text-decoration: none; }
+.footer-line a:hover { color: var(--accent); }
+@media (max-width: 600px) {
+  .page { padding: 40px 18px 60px; }
+  h1 { font-size: 24px; }
+  .tagline { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <a href="/" class="back">&larr; Semantic Economy Institute</a>
+
+  <h1>Measurement <em>Sovereignty</em></h1>
+  <div class="subtitle">B operator &middot; June 2026</div>
+
+  <div class="tagline">The right to define adequate measurement is the right to define adequate compliance.</div>
+
+
+  <p>Every institutional accountability mechanism depends on a measurement. The measurement is performed by some party. The party performing the measurement decides what data are collected, what categories are reported, what counts as compliant, and what counts as failure. The right to perform the measurement is therefore the right to shape what the measurement can possibly reveal.</p>
+
+  <p><strong>Measurement sovereignty</strong> is the operational name for this right and for the structural problem that follows from it: institutions whose accountability depends on measurements that the institution itself authorizes face an accountability gap that no quantity of measurement can close.</p>
+
+  <h2>The audit-performance bifurcation</h2>
+
+  <p>The deposit names the structural operator that produces this gap: the <strong>Audit-Performance Bifurcation Operator (B)</strong>. The operator names the institutional dynamic in which what the institution does <em>under audit</em> is a structurally different thing from what the institution does <em>in ordinary operation</em>.</p>
+
+  <div class="distillation">
+    <span class="a">Audit produces audit-compliant behavior, measurable and reportable.</span>
+    <span class="b">Performance produces operational behavior, which the audit was supposed to measure.</span>
+  </div>
+
+  <p>The operator B describes the gap between these two modes. The institution&rsquo;s ordinary operational behavior is what the audit was supposed to characterize. The institution&rsquo;s audit-compliant behavior is what the audit actually characterizes. B = 1 when the two coincide. B &gt; 1 when audit performance exceeds operational performance &mdash; when the institution performs better when measured than when not. B &lt; 1 is the rare and revealing case: when the institution&rsquo;s ordinary operation is more compliant than its audited operation, suggesting the audit itself produces dysfunction.</p>
+
+  <h2>The legibility problem</h2>
+
+  <p>The accountability apparatus assumes legibility: that the institution&rsquo;s operations can be made visible to the auditor in ways that preserve their substantive character. The Audit-Performance Bifurcation challenges this assumption. The institution is legible to the auditor only along the dimensions the institution chooses to make legible, and the auditor&rsquo;s capacity to require additional legibility is itself a function of the institution&rsquo;s measurement sovereignty.</p>
+
+  <h2>Where this connects</h2>
+
+  <p>Measurement sovereignty operates at every layer of the Semantic Economy series. AI platforms claim sovereignty over the measurement of their own composition-layer outputs. <a href="/snw">Stabilized Node Watch</a> is the structural response: independent, federated, methodologically rigorous measurement that does not require the institution&rsquo;s authorization. The Audit-Performance Bifurcation Operator is the formal name for what SNW is designed to bypass: not by working with the institution&rsquo;s audit apparatus, but by establishing a measurement substrate the institution does not control.</p>
+
+
+  <a href="https://doi.org/10.5281/zenodo.20558784" class="deposit-link">
+    <span class="label">Zenodo &middot; CC BY 4.0 &middot; v1.0</span>
+    <span>Measurement Sovereignty: The Audit-Performance Bifurcation Operator (B) and the Legibility Problem</span><br>
+    <span class="doi">DOI: 10.5281/zenodo.20558784</span>
+  </a>
+
+  <p class="companion">Empirical companion: <a href="/snw">Stabilized Node Watch</a> (v2.0) is the federated measurement infrastructure that operates outside platform measurement sovereignty.</p>
+
+
+  <div class="motto">Who measures the measurer?</div>
+
+  <span class="sigil" onclick="document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark')">&#8750; = 1</span>
+
+  <div class="footer-line">
+    Semantic Economy Institute &middot; Detroit &middot; <a href="/">Home</a> &middot; <a href="https://doi.org/10.5281/zenodo.20558784">Zenodo deposit</a> &middot; <a href="mailto:rexfraction@gmail.com">Contact</a>
+  </div>
+
+</div>
+
+</body>
+</html>
