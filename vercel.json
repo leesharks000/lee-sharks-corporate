@@ -1,3 +1,17 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "semanticeconomy.org"
+        }
+      ],
+      "destination": "https://www.semanticeconomy.org/:path*",
+      "permanent": true
+    }
+  ],
+  "trailingSlash": false
 }
