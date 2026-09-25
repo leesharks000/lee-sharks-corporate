@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://www.semanticeconomy.org/value-before-number</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -39,6 +39,18 @@
   <url>
     <loc>https://www.semanticeconomy.org/hypostasis</loc>
     <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.semanticeconomy.org/monetary-dark-matter</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.semanticeconomy.org/ontological-economy</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
