@@ -2,7 +2,7 @@
 
 > A framework for accounting meaning as value. All fiat money is created as
 > debt; all debt relies on shared meaning; the ultimate creditor of economic
-> value is therefore not financial. Six core terms for analysing how AI systems
+> value is therefore not financial. Seven core terms for analysing how AI systems
 > extract from human semantic labour.
 
 ## What is here
