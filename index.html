@@ -723,7 +723,7 @@ section.block:first-of-type { border-top: none; padding-top: 0; }
  <div class="logo">
   Rex Fraction
   <span class="sig-wrap">
-   <span class="sig" onclick="toggleTheme" title="∮ — contour integral. Meaning preserved.">∮</span>
+   <span class="sig" onclick="toggleTheme()" title="∮ — contour integral. Meaning preserved.">∮</span>
    <span class="sig-tip">∮ toggle</span>
   </span>
   <span class="op">Operative</span>
@@ -1010,7 +1010,7 @@ section.block:first-of-type { border-top: none; padding-top: 0; }
 <!-- ENTITY PREVIEW MODAL -->
 <div class="modal-overlay" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="previewTitle">
  <div class="modal-card">
-  <button class="modal-close" onclick="closeModal" aria-label="Close">×</button>
+  <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
   <div class="preview-card">
    <div class="preview-eyebrow">
     <span class="sigil">∮</span>
@@ -1027,7 +1027,7 @@ section.block:first-of-type { border-top: none; padding-top: 0; }
    <p>An SPXI baseline audit maps what exists now — what the AI composes, what it burns, what's missing — and produces the blueprint for building. Five business days. Fixed scope.</p>
    <div class="preview-cta-row">
     <a id="preview-cta" href="mailto:rexfraction@gmail.com" class="cta-primary">Start the conversation →</a>
-    <a href="#" onclick="closeModal; return false;" class="cta-secondary">← Back</a>
+    <a href="#" onclick="closeModal(); return false;" class="cta-secondary">← Back</a>
    </div>
    <div class="preview-footer-note">
     ∮ = 1 · 06.SEI.ARCHIVE · Audits scoped · Builds scoped
@@ -1037,7 +1037,7 @@ section.block:first-of-type { border-top: none; padding-top: 0; }
 </div>
 
 <script>
- function toggleTheme {
+ function toggleTheme() {
   const root = document.documentElement;
   const current = root.getAttribute('data-theme');
   const next = current === 'dark' ? 'light' : 'dark';
@@ -1056,11 +1056,11 @@ section.block:first-of-type { border-top: none; padding-top: 0; }
  const modal = document.getElementById('previewModal');
 
  form.addEventListener('submit', (e) => {
-  e.preventDefault;
-  const entity = input.value.trim;
+  e.preventDefault();
+  const entity = input.value.trim();
   if (!entity) return;
   const safeEntity = entity.replace(/[<>&"]/g, (c) => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
-  document.getElementById('preview-subject').textContent = entity.toUpperCase.substring(0, 40);
+  document.getElementById('preview-subject').textContent = entity.toUpperCase().substring(0, 40);
   document.getElementById('preview-entity').innerHTML = safeEntity;
   document.getElementById('preview-entity-2').innerHTML = '&ldquo;' + safeEntity + '&rdquo;';
   const mailSubject = encodeURIComponent('SPXI Baseline Audit: ' + entity);
@@ -1070,17 +1070,17 @@ section.block:first-of-type { border-top: none; padding-top: 0; }
   document.body.style.overflow = 'hidden';
  });
 
- function closeModal {
+ function closeModal() {
   modal.classList.remove('active');
   document.body.style.overflow = '';
  }
 
  document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && modal.classList.contains('active')) closeModal;
+  if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
  });
 
  modal.addEventListener('click', (e) => {
-  if (e.target === modal) closeModal;
+  if (e.target === modal) closeModal();
  });
 </script>
 
