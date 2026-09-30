@@ -7,6 +7,9 @@
 
 ## What is here
 
+The library, every instrument and paper in five groups with one sentence each: https://www.semanticeconomy.org/library
+The Institute's own position, in the terms of its own instruments: https://www.semanticeconomy.org/position
+
 The brief, the disambiguation, and the instruments: erasure skew, the mediation
 ratchet, double enclosure, composition-layer capture, measurement sovereignty.
 
