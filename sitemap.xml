@@ -50,7 +50,13 @@
   </url>
   <url>
     <loc>https://www.semanticeconomy.org/ontological-economy</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.semanticeconomy.org/margin-of-flattening</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

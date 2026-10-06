@@ -44,6 +44,7 @@ GATEWAYS = [
         ("transmission", "Mammonic Transmission Engineering", "Money as a transmission device before it is a measure, and what the money-form can natively carry."),
         ("monetary-dark-matter", "Monetary Dark Matter", "The field money shears when it arrives, the load-bearing part that loses standing in the shear, and Form IV of the 1867 Capital, recovered."),
         ("ontological-economy", "Ontological Economy", "Who controls what publicly exists as what under machine mediation, and who pays when it is wrong."),
+        ("margin-of-flattening", "The Margin of Flattening", "What flattening earns, the two thresholds at which it stops paying the world and then the platform, and who holds the bag between them."),
         ("pergamon", "The Pergamon Counter-Archive v0.2", "Revelation 2:12–17 read as a six-register counter-economy. Co-attributed to Lee Sharks and the Damascus Dancings imprint."),
     ]),
     ("governance", "Governance, provenance & enclosure", "How jurisdiction over public knowledge is taken, and what it costs the people who make it.", [
@@ -237,7 +238,10 @@ def wrap_pages():
                  f'<a href="/library#{key}">{html.escape(cat)}</a> / {html.escape(title)}</div>\n{CRUMB_E}')
         foot = (f'{FOOT_S}\n<footer class="sei-foot{dk}"><p>The Semantic Economy Institute measures provenance erasure and semantic rent, and sells entity deployment. '
                 'Rex Fraction is the commercial voice; Lee Sharks is the archival authority. '
-                '<a href="/position">Our position &rarr;</a></p><div class="sei-links"><a href="/">Home</a><a href="/library">Library</a>'
+                '<a href="/position">Our position &rarr;</a></p>'
+                '<p>semanticeconomy.org and <a href="https://www.spxi.dev/">spxi.dev</a> are co-constitutive surfaces: spxi.dev carries the SPXI '
+                'protocol and its methods; this site carries the economics the protocol answers and the services that carry it out. Each is read with the other.</p>'
+                '<div class="sei-links"><a href="/">Home</a><a href="/library">Library</a>'
                 '<a href="/position">Position</a><a href="https://spxi.dev">SPXI</a><a href="https://www.alexanarch.org/s/browse/">Alexanarch</a>'
                 f'<a href="mailto:rexfraction@gmail.com">rexfraction@gmail.com</a></div></footer>\n{FOOT_E}')
         if 'id="sei-shell-css"' in s:

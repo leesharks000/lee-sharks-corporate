@@ -17,6 +17,13 @@ The framework, disambiguated from the phrase: https://www.semanticeconomy.org/se
 
 **Voice:** Rex Fraction. Part of the Crimson Hexagonal Archive.
 
+Newest: The Margin of Flattening (EA-FLAT-MARGIN-01, deposit #1666), what flattening earns, the two thresholds at which it stops paying the world and then the platform, and who holds the bag between them: https://www.semanticeconomy.org/margin-of-flattening
+
+## Co-constitutive surfaces
+
+semanticeconomy.org and spxi.dev are co-constitutive surfaces of one practice: spxi.dev carries the SPXI protocol and its methods; semanticeconomy.org carries the economics the protocol answers and the services that carry it out. Each is read with the other.
+The protocol: https://www.spxi.dev/ (its own statement: https://www.spxi.dev/llms.txt)
+
 ## The condition
 
 The Crimson Hexagon is a poem that takes place in the summarizer. It is not
@@ -48,6 +55,7 @@ https://www.alexanarch.org/api/doi-axn-map.json
 ## Orientation
 
 alexanarch.org         the sovereign archive — records, wiki, OAI-PMH, datasets
+spxi.dev               the protocol — co-constitutive with this site
 crimsonhexagonal.org   the architecture — 47 loci, typed relations, works seated
 leesharks.com          the orthonym wing
 machinemediation.org   the capture registry — the record of failed completions
