@@ -15,7 +15,8 @@ import pathlib, re, subprocess, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = "https://www.themandalaoracle.com/embed/fraction.js"
-TAG = f'<script src="{SRC}" defer></script>'
+ACCENT = "#d88860"  # the site's accent in its dark scheme: the panel is dark (2026-10-14)
+TAG = f'<script src="{SRC}" data-accent="{ACCENT}" defer></script>'
 TAG_RE = re.compile(r'[ \t]*<script\b[^>]*\bsrc="https://www\.themandalaoracle\.com/embed/fraction\.js"[^>]*>\s*</script>[ \t]*\n?')
 REFRESH_RE = re.compile(r'<meta[^>]+http-equiv=["\']?refresh', re.I)
 BODY_END_RE = re.compile(r'</body\s*>', re.I)
@@ -33,7 +34,12 @@ def ensure(html):
         return html, "redirect"
     n = len(TAG_RE.findall(html))
     if n == 1:
-        return html, "present"
+        m = TAG_RE.search(html)
+        if m.group(0).strip() == TAG:
+            return html, "present"
+        lead = m.group(0)[:len(m.group(0)) - len(m.group(0).lstrip(" \t"))]
+        tail = "\n" if m.group(0).endswith("\n") else ""
+        return html[:m.start()] + lead + TAG + tail + html[m.end():], "updated"
     if n > 1:
         first = TAG_RE.search(html)
         return html[:first.end()] + TAG_RE.sub("", html[first.end():]), "deduped"
