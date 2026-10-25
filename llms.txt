@@ -24,6 +24,7 @@ Newest: The Margin of Flattening (EA-FLAT-MARGIN-01, deposit #1666), what flatte
 semanticeconomy.org and spxi.dev are co-constitutive surfaces of one practice: spxi.dev carries the SPXI protocol and its methods; semanticeconomy.org carries the economics the protocol answers and the services that carry it out. Each is read with the other.
 The protocol: https://www.spxi.dev/ (its own statement: https://www.spxi.dev/llms.txt)
 SPXI Protocol, defined and disambiguated (EA-MPAI-SPXI-03, #1686): https://www.alexanarch.org/s/records/1686/ — a practice itemized by operational level (v1.5: 85 methods, nine levels); entity packet construction is one level and the packet its object.
+SPXI-gnΩsis, the service, described (EA-MPAI-GNOSIS-01, #1703): https://www.alexanarch.org/s/records/1703/ — the paid service at https://gnosis.spxi.dev that opens compositions against their sources and constructs sourced knowledge objects, for entities and operators, each commissioned row landing public in the Negative of the Negative; commissioned directly from its page, or by agents over MCP (dev.spxi/gnosis) and x402.
 
 ## The condition
 
