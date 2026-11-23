@@ -45,6 +45,7 @@ GATEWAYS = [
         ("monetary-dark-matter", "Monetary Dark Matter", "The field money shears when it arrives, the load-bearing part that loses standing in the shear, and Form IV of the 1867 Capital, recovered."),
         ("ontological-economy", "Ontological Economy", "Who controls what publicly exists as what under machine mediation, and who pays when it is wrong."),
         ("who-decides-the-object", "Who Decides the Object: The Combined Audit as Ontological Economy", "The combined audit of three classics journals read as an economy: the power to say what a text is, kept at the gate of Classical Philology and spent as the received text, with the article economy and the margin drawing on it (Lee Sharks; #1770, #1773, #1783)."),
+        ("who-benefits", "Who Benefits from Bad Inference?", "Who gains from an unwarranted inference across seven domains, named by position and never by motive: three kinds of advantage, eleven operators, the demand-formation corollary, and an audit of inferential conversion (Sharks, Sigil, Glas, Fraction; #1802)."),
         ("margin-of-flattening", "The Margin of Flattening", "What flattening earns, the two thresholds at which it stops paying the world and then the platform, and who holds the bag between them."),
         ("pergamon", "The Pergamon Counter-Archive v0.2", "Revelation 2:12–17 read as a six-register counter-economy. Co-attributed to Lee Sharks and the Damascus Dancings imprint."),
     ]),
